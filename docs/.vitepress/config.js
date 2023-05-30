@@ -3,7 +3,7 @@
  * @Description:
  * @Date: 2023-05-26 14:47:28
  * @LastEditors: along
- * @LastEditTime: 2023-05-29 22:06:58
+ * @LastEditTime: 2023-05-30 14:18:30
  * @FilePath: /cxy-web-box/docs/.vitepress/config.js
  */
 export default {
@@ -11,18 +11,32 @@ export default {
   title: 'Web Box',
   description: 'Just playing around.',
   themeConfig: {
-    logo: '/image/along.svg',
+    logo: '/image/logo.svg',
     lastUpdatedText: 'Updated Date',
     nav: [
       {
-        text: 'Web',
-        items: [
-          { text: 'HTML5', link: '/html/' },
-          { text: 'CSS3', link: '/css/' },
-          { text: 'JavaScript', link: '/js/' },
-          { text: '设计模式', link: '/design/' },
-          { text: 'Web Apis', link: '/web/' },
-        ]
+        text: '工具盒',
+        link: "/tool/"
+      },
+      {
+        text: '小册',
+        link: "/course/"
+      },
+      {
+        text: '指南',
+        link: "/guide/"
+      },
+      {
+        text: '关于我',
+        link: "/introduce/"
+      },
+      {
+        text: '赞助',
+        link: "/sponsor/"
+      },
+      {
+        text: '插件',
+        link: "https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd?hl=zh-CN"
       }
     ],
     sidebar: {
