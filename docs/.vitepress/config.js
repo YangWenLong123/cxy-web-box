@@ -3,16 +3,57 @@
  * @Description:
  * @Date: 2023-05-26 14:47:28
  * @LastEditors: along
- * @LastEditTime: 2023-05-30 14:18:30
+ * @LastEditTime: 2023-05-30 20:46:50
  * @FilePath: /cxy-web-box/docs/.vitepress/config.js
  */
-export default {
+import { defineConfig } from 'vitepress'
+
+export default defineConfig({
   lang: 'en-US',
   title: 'Web Box',
   description: 'Just playing around.',
+  lastUpdated: true,
+  head: [
+    // [['meta', { name: 'keywords', content: 'Web Box, 程序员盒子, 一个网站、提供一揽子的服务, along, 前端笔记' }]],
+    // ['meta', { name: 'theme-color', content: '#3c8772' }],
+    ['link', { rel: 'stylesheet', href: '/styles/global.css', crossorigin: '' }],
+  ],
   themeConfig: {
     logo: '/image/logo.svg',
     lastUpdatedText: 'Updated Date',
+    search: {
+      provider: 'local',
+      options: {
+        locales: {
+          zh: {
+            translations: {
+              button: {
+                buttonText: '搜索文档',
+                buttonAriaLabel: '搜索文档'
+              },
+              modal: {
+                noResultsText: '无法找到相关结果',
+                resetButtonTitle: '清除查询条件',
+                footer: {
+                  selectText: '选择',
+                  navigateText: '切换'
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    // localeLinks: {
+    //   items: [
+    //     { text: "简体中文", link: "/" },
+    //     { text: "English", link: "/en" }
+    //   ]
+    // },
+    // carbonAds: {
+    //   code: 'your-carbon-code',
+    //   placement: 'your-carbon-placement'
+    // },
     nav: [
       {
         text: '工具盒',
@@ -45,7 +86,8 @@ export default {
           text: 'HTML5',
           items: [
             { text: '走进HTML', link: '/html/' },
-            { text: 'Referrer', link: '/html/index-1.md' }
+            { text: 'Referrer', link: '/html/html-1.md' },
+            { text: '编码', link: '/html/html-2.md' }
           ]
         }
       ],
@@ -54,6 +96,9 @@ export default {
           text: 'CSS3',
           items: [
             { text: 'CSS命名规范', link: '/css/' },
+            { text: '常用CSS属性', link: '/css/css-1.md' },
+            { text: '移动端适配', link: '/css/css-2.md' },
+            { text: '多媒体查询', link: '/css/css-3.md' },
           ]
         }
       ],
@@ -94,4 +139,4 @@ export default {
     //   text: 'Edit this page on GitHub'
     // }
   }
-}
+})

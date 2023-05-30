@@ -71,7 +71,7 @@ features:
     link: /structure/
   - title: "项目实战"
     details: "带你从0到1完成一个企业级项目。"
-    link: /project/
+    link: /project/s
 
 
 # https://github.dev/process1024/vitepress
