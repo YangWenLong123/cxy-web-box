@@ -3,7 +3,7 @@
  * @Description:
  * @Date: 2023-05-26 14:47:28
  * @LastEditors: along
- * @LastEditTime: 2023-05-31 09:48:29
+ * @LastEditTime: 2023-05-31 16:37:47
  * @FilePath: /cxy-web-box/docs/.vitepress/config.js
  */
 import { defineConfig } from 'vitepress'
@@ -16,7 +16,9 @@ export default defineConfig({
   head: [
     // [['meta', { name: 'keywords', content: 'Web Box, 程序员盒子, 一个网站、提供一揽子的服务, along, 前端笔记' }]],
     // ['meta', { name: 'theme-color', content: '#3c8772' }],
-    ['link', { rel: 'stylesheet', href: '/styles/global.css', crossorigin: '' }],
+    ['link', { rel: 'stylesheet', href: '/styles/global.css' }],
+    ['link', { rel: 'icon', href: '/image/logo.svg', type: 'image/svg+xml' }],
+
   ],
   themeConfig: {
     logo: '/image/logo.svg',
@@ -56,7 +58,7 @@ export default defineConfig({
     // },
     nav: [
       {
-        text: '工具盒',
+        text: '工具',
         link: "http://xyz.alongweb.top",
         target: '_self',
         rel: 'sponsored'
@@ -66,6 +68,14 @@ export default defineConfig({
         link: "http://xyz.alongweb.top/book",
         target: '_self',
         rel: 'sponsored'
+      },
+      {
+        text: '随笔',
+        link: "/notes/"
+      },
+      {
+        text: '摸鱼',
+        link: "/lazy/"
       },
       {
         text: '指南',
@@ -82,6 +92,12 @@ export default defineConfig({
       {
         text: '插件',
         link: "https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd?hl=zh-CN"
+      },
+      {
+        text: '友链',
+        items: [
+          { text: '祥祥的前端之旅', link: 'http://www.zxxweb.top' }
+        ]
       }
     ],
     sidebar: {
