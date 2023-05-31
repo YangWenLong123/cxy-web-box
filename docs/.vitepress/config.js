@@ -3,7 +3,7 @@
  * @Description:
  * @Date: 2023-05-26 14:47:28
  * @LastEditors: along
- * @LastEditTime: 2023-05-30 20:46:50
+ * @LastEditTime: 2023-05-31 09:48:29
  * @FilePath: /cxy-web-box/docs/.vitepress/config.js
  */
 import { defineConfig } from 'vitepress'
@@ -57,11 +57,15 @@ export default defineConfig({
     nav: [
       {
         text: '工具盒',
-        link: "/tool/"
+        link: "http://xyz.alongweb.top",
+        target: '_self',
+        rel: 'sponsored'
       },
       {
         text: '小册',
-        link: "/course/"
+        link: "http://xyz.alongweb.top/book",
+        target: '_self',
+        rel: 'sponsored'
       },
       {
         text: '指南',
