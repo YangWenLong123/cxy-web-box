@@ -3,7 +3,7 @@
  * @Description:
  * @Date: 2023-05-26 14:47:28
  * @LastEditors: along
- * @LastEditTime: 2023-05-31 16:37:47
+ * @LastEditTime: 2023-06-03 13:42:58
  * @FilePath: /cxy-web-box/docs/.vitepress/config.js
  */
 import { defineConfig } from 'vitepress'
@@ -127,6 +127,26 @@ export default defineConfig({
           text: 'JavaScript',
           items: [
             { text: '数据类型及类型判断', link: '/js/' },
+            { text: '真值与假值', link: '/js/js-1.md' },
+            { text: '数据类型转换', link: '/js/js-2.md' },
+            { text: '变量', link: '/js/js-3.md' },
+            { text: '特殊符号', link: '/js/js-4.md' },
+            { text: '转移字符', link: '/js/js-5.md' },
+            { text: '控制流与异常处理', link: '/js/js-6.md' },
+            { text: '循环', link: '/js/js-7.md' },
+            { text: '函数', link: '/js/js-8.md' },
+            { text: '闭包', link: '/js/js-9.md' },
+            { text: 'call、apply、bind', link: '/js/js-10.md' },
+            { text: '数字与日期', link: '/js/js-11.md' },
+            { text: '对象', link: '/js/js-12.md' },
+            { text: '数组', link: '/js/js-13.md' },
+            { text: '继承和原型链', link: '/js/js-14.md' },
+            { text: '正则', link: '/js/js-15.md' },
+            { text: '正则表达式', link: '/js/js-16.md' },
+            { text: 'Map and Set', link: '/js/js-17.md' },
+            { text: 'WeakMap', link: '/js/js-18.md' },
+            { text: 'WeakSet', link: '/js/js-19.md' },
+            { text: 'Promise', link: '/js/js-20.md' },
           ]
         }
       ],
