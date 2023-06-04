@@ -3,7 +3,7 @@
  * @Description:
  * @Date: 2023-05-26 14:47:28
  * @LastEditors: along
- * @LastEditTime: 2023-06-03 13:42:58
+ * @LastEditTime: 2023-06-04 10:38:50
  * @FilePath: /cxy-web-box/docs/.vitepress/config.js
  */
 import { defineConfig } from 'vitepress'
@@ -147,6 +147,44 @@ export default defineConfig({
             { text: 'WeakMap', link: '/js/js-18.md' },
             { text: 'WeakSet', link: '/js/js-19.md' },
             { text: 'Promise', link: '/js/js-20.md' },
+            { text: 'Async', link: '/js/js-21.md' },
+            { text: 'Ajax', link: '/js/js-22.md' },
+            { text: 'Proxy', link: '/js/js-23.md' },
+            { text: 'generator', link: '/js/js-24.md' },
+            { text: 'Reflect', link: '/js/js-25.md' },
+            { text: '类', link: '/js/js-26.md' },
+            { text: 'Window', link: '/js/js-27.md' },
+            { text: '模块', link: '/js/js-28.md' },
+            { text: '事物', link: '/js/js-29.md' },
+            { text: '跨域', link: '/js/js-30.md' },
+            { text: '回流重绘', link: '/js/js-31.md' },
+            { text: 'requestAnimationFrame', link: '/js/js-32.md' },
+            { text: '常用编码转化', link: '/js/js-33.md' },
+            { text: '笛卡尔积', link: '/js/js-34.md' },
+            { text: 'APi封装', link: '/js/js-35.md' },
+            { text: '数据的深拷贝', link: '/js/js-36.md' },
+            { text: '异步并行与串行', link: '/js/js-37.md' },
+            { text: '代码并发控制', link: '/js/js-38.md' },
+            { text: '图片压缩', link: '/js/js-39.md' },
+            { text: '虚拟滚动', link: '/js/js-40.md' },
+            { text: '文件切片', link: '/js/js-41.md' },
+            { text: '单文件与多文件下载', link: '/js/js-41.md' },
+            { text: '获取视频某一帧', link: '/js/js-43.md' },
+            { text: 'json数据导出csv', link: '/js/js-44.md' },
+            { text: '碰撞检测', link: '/js/js-45.md' },
+            { text: '前端常见兼容', link: '/js/js-46.md' },
+            { text: '浏览器滚动舰艇', link: '/js/js-47.md' },
+            { text: '浏览器存储', link: '/js/js-48.md' },
+            { text: '强缓存与协商缓存', link: '/js/js-49.md' },
+            { text: '前端缓存', link: '/js/js-50.md' },
+            { text: '函数式编程', link: '/js/js-51.md' },
+            { text: '地图接入指南', link: '/js/js-52.md' },
+            { text: '数据埋点', link: '/js/js-53.md' },
+            { text: 'Event loop', link: '/js/js-54.md' },
+            { text: '中文转拼音', link: '/js/js-55.md' },
+            { text: 'js开发工具函数', link: '/js/js-56.md' },
+            { text: '不同类型转base64的后缀', link: '/js/js-57.md' },
+            { text: '城市编码表', link: '/js/js-58.md' },
           ]
         }
       ],
