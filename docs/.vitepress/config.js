@@ -3,7 +3,7 @@
  * @Description:
  * @Date: 2023-05-26 14:47:28
  * @LastEditors: along
- * @LastEditTime: 2023-06-05 16:51:22
+ * @LastEditTime: 2023-06-05 19:59:10
  * @FilePath: /cxy-web-box/docs/.vitepress/config.js
  */
 import { defineConfig } from 'vitepress'

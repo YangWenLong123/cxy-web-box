@@ -1,21 +1,17 @@
-/*
- * @Author: along
- * @Description:
- * @Date: 2023-05-30 19:45:20
- * @LastEditors: along
- * @LastEditTime: 2023-05-31 16:23:42
- * @FilePath: /cxy-web-box/vite.config.js
- */
-export default {
-  base: './',
-  build: {
-    rollupOptions: {
-      output: {
-        // 定义输出目录
-        dir: 'dist',
-        // 定义输出文件名
-        assetFileNames: 'assets/[name].[hash][ext]'
-      }
-    }
-  }
-}
+
+import { defineConfig } from 'vite'
+// import Vue from '@vitejs/plugin-vue'
+// import Markdown from 'vite-plugin-vue-markdown'
+// import MarkdownPreview from 'vite-plugin-markdown-preview'
+
+const config = defineConfig({
+  // plugins: [
+  //   Vue({
+  //     include: [/\.vue$/, /\.md$/],
+  //   }),
+  //   Markdown(),
+  //   MarkdownPreview(),
+  // ],
+})
+
+export default config
