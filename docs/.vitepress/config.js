@@ -3,7 +3,7 @@
  * @Description:
  * @Date: 2023-05-26 14:47:28
  * @LastEditors: along
- * @LastEditTime: 2023-06-04 10:38:50
+ * @LastEditTime: 2023-06-05 15:28:27
  * @FilePath: /cxy-web-box/docs/.vitepress/config.js
  */
 import { defineConfig } from 'vitepress'
@@ -24,7 +24,7 @@ export default defineConfig({
     logo: '/image/logo.svg',
     lastUpdatedText: 'Updated Date',
     search: {
-      provider: 'local',
+      // provider: 'local',
       options: {
         locales: {
           zh: {
@@ -105,9 +105,15 @@ export default defineConfig({
         {
           text: 'HTML5',
           items: [
-            { text: '走进HTML', link: '/html/' },
-            { text: 'Referrer', link: '/html/html-1.md' },
-            { text: '编码', link: '/html/html-2.md' }
+            { text: '走进HTML的世界', link: '/html/' },
+            { text: '如何使用Referrer', link: '/html/html-1.md' },
+            { text: 'HTM的编码初步了解', link: '/html/html-2.md' },
+            { text: 'HTML5中的语义化标签', link: '/html/html-3.md' },
+            { text: '如何使用HTML5的新表单元素', link: '/html/html-4.md' },
+            { text: 'HTML5中的Canvas和SVG', link: '/html/html-5.md' },
+            { text: '如何使用HTML的音频和视频标签', link: '/html/html-6.md' },
+            { text: 'HTML5中的地理定位API', link: '/html/html-7.md' },
+            { text: '如何使用HTML5的拖放API', link: '/html/html-8.md' }
           ]
         }
       ],
@@ -193,6 +199,21 @@ export default defineConfig({
           text: '设计模式',
           items: [
             { text: '灵活的语言-Javascript', link: '/design/' },
+            { text: '设计模式分类概览表', link: '/design/design-1.md' },
+            { text: '面向对象编程', link: '/design/design-2.md' },
+            { text: '构造器模式', link: '/design/design-3.md' },
+            { text: '模块化模式', link: '/design/design-4.md' },
+            { text: '暴露模块模式', link: '/design/design-5.md' },
+            { text: '单例模式', link: '/design/design-6.md' },
+            { text: '观察者模式', link: '/design/design-7.md' },
+            { text: '中介者模式', link: '/design/design-8.md' },
+            { text: '原型模式', link: '/design/design-9.md' },
+            { text: '命令模式', link: '/design/design-10.md' },
+            { text: '外观模式', link: '/design/design-11.md' },
+            { text: '工厂模式', link: '/design/design-12.md' },
+            { text: 'Mixin模式', link: '/design/design-13.md' },
+            { text: '装饰模式', link: '/design/design-14.md' },
+            { text: '享元模式', link: '/design/design-15.md' },
           ]
         }
       ],
