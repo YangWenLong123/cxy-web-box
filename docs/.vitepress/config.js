@@ -3,7 +3,7 @@
  * @Description:
  * @Date: 2023-05-26 14:47:28
  * @LastEditors: along
- * @LastEditTime: 2023-06-05 19:59:10
+ * @LastEditTime: 2023-06-05 21:06:41
  * @FilePath: /cxy-web-box/docs/.vitepress/config.js
  */
 import { defineConfig } from 'vitepress'
@@ -240,6 +240,41 @@ export default defineConfig({
           ]
         }
       ],
+      '/algorithm': [
+        {
+          text: '数据结构与算法',
+          items: [
+            { text: '介绍', link: '/algorithm/' },
+            { text: '数据结构-数组', link: '/algorithm/index-0.md' },
+            { text: '数据结构-堆栈', link: '/algorithm/index-1.md' },
+            { text: '数据结构-队列', link: '/algorithm/index-2.md' },
+            { text: '数据结构-链表', link: '/algorithm/index-3.md' },
+            { text: '数据结构-集合', link: '/algorithm/index-4.md' },
+            { text: '数据结构-字典', link: '/algorithm/index-5.md' },
+            { text: '数据结构-散列表', link: '/algorithm/index-6.md' },
+            { text: '数据结构-二叉树', link: '/algorithm/index-7.md' },
+            { text: '数据结构-图', link: '/algorithm/index-8.md' },
+            { text: '算法-排序算法', link: '/algorithm/index-9.md' },
+            { text: '算法-数组去重', link: '/algorithm/index-10.md' },
+            { text: '算法-数据分页', link: '/algorithm/index-11.md' },
+            { text: '算法-递归', link: '/algorithm/index-12.md' },
+            { text: '算法-检索算法', link: '/algorithm/index-13.md' },
+            { text: '算法-高级算法', link: '/algorithm/index-14.md' },
+            { text: '算法-原地算法', link: '/algorithm/index-141.md' },
+            { text: '算法-AST', link: '/algorithm/index-15.md' },
+            { text: '算法-双指针', link: '/algorithm/index-16.md' },
+            { text: '算法-二分法', link: '/algorithm/index-17.md' },
+            { text: '算法-常用树操作', link: '/algorithm/index-18.md' },
+            { text: '算法-其他', link: '/algorithm/index-25.md' },
+            { text: 'LeetCode-数组集合操作', link: '/algorithm/index-19.md' },
+            { text: 'LeetCode-数组包含', link: '/algorithm/index-20.md' },
+            { text: 'LeetCode-过滤重复', link: '/algorithm/index-21.md' },
+            { text: 'LeetCode-寻找中位数', link: '/algorithm/index-22.md' },
+            { text: 'LeetCode-合并两个有序链表', link: '/algorithm/index-23.md' },
+            { text: 'diff算法', link: '/algorithm/index-24.md' },
+          ]
+        }
+      ]
     },
     socialLinks: [
       { icon: 'github', link: 'https://github.com/YangWenLong123' },

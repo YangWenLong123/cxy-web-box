@@ -42,9 +42,9 @@ features:
   - title: "Web Api"
     details: "Web API是Web的应用程序编程接口，可扩展浏览器和服务器的功能"
     link: /web/
-  - title: "HTTP协议详解"
-    details: "HTTP是一种用于传输数据的协议，它可以控制缓存和认证，开放同源限制等。"
-    link: /http/
+  # - title: "HTTP协议详解"
+  #   details: "HTTP是一种用于传输数据的协议，它可以控制缓存和认证，开放同源限制等。"
+  #   link: /http/
   - title: "TypeScript"
     details: "TypeScript是一种由微软推出的开源编程语言，是JavaScript的超集，可以转换成纯JavaScript代码。"
     link: /ts/

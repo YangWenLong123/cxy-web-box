@@ -5,6 +5,11 @@ import { defineConfig } from 'vite'
 // import MarkdownPreview from 'vite-plugin-markdown-preview'
 
 const config = defineConfig({
+  server: {
+    host: 8889,
+    open: true
+
+  },
   // plugins: [
   //   Vue({
   //     include: [/\.vue$/, /\.md$/],
