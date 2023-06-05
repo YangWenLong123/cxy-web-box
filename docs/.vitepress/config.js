@@ -3,7 +3,7 @@
  * @Description:
  * @Date: 2023-05-26 14:47:28
  * @LastEditors: along
- * @LastEditTime: 2023-06-05 15:28:27
+ * @LastEditTime: 2023-06-05 16:51:22
  * @FilePath: /cxy-web-box/docs/.vitepress/config.js
  */
 import { defineConfig } from 'vitepress'
@@ -222,6 +222,21 @@ export default defineConfig({
           text: 'Web Apis',
           items: [
             { text: 'Canvas Api', link: '/web/' },
+            { text: 'Html2Canvas', link: '/web/web-2.md' },
+            { text: 'FontFace APi', link: '/web/web-3.md' },
+            { text: 'Geolocation Api', link: '/web/web-4.md' },
+            { text: 'IntersectionObserver', link: '/web/web-5.md' },
+            { text: 'Server-Sent Events', link: '/web/web-6.md' },
+            { text: 'SVG', link: '/web/web-7.md' },
+            { text: 'WebSocket', link: '/web/web-8.md' },
+            { text: 'WebSocket实践', link: '/web/web-9.md' },
+            { text: 'WebSocket模拟', link: '/web/web-10.md' },
+            { text: 'Web Share API', link: '/web/web-11.md' },
+            { text: 'Fetch Api', link: '/web/web-12.md' },
+            { text: 'Service Worker', link: '/web/web-13.md' },
+            { text: 'Web Components', link: '/web/web-14.md' },
+            { text: 'Web Audio API', link: '/web/web-15.md' },
+            { text: 'WebRTC', link: '/web/web-16.md' }
           ]
         }
       ],
