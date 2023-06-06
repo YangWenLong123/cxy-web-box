@@ -55,23 +55,23 @@ features:
     details: "Nest是一个Node.js的框架，它使用了现代的JavaScript或TypeScript编写。"
     link: /nest/
   - title: "Vue"
-    details: "Vue 是一套用于构建用户界面的渐进式框架，易于上手并且适合与第三方库或既有项目整合。"
+    details: "Vue 是一套用于构建用户界面的渐进式框架。"
     link: /vue/
-  - title: "UniApp"
-    details: "UniApp是一个使用Vue.js开发跨平台前端应用的框架，开发者编写一套代码，可发布到iOS、Android、H5、小程序等多个平台。"
-    link: /uapp/
-  - title: "react"
-    details: "React是一种非常流行的JavaScript库，用于构建用户界面。"
-    link: /react/
+  - title: "vue企业级项目搭建流程"
+    details: "如何从0到1搭建一个vue的项目。"
+    link: /structure/
+  - title: "uniapp"
+    details: "跨平台前端应用的框架，一套代码，可发布到多个平台。"
+    link: /uniapp/
+  # - title: "react"
+  #   details: "React是一种非常流行的JavaScript库，用于构建用户界面。"
+  #   link: /react/
   - title: "Linux"
     details: "Linux的常用指令"
     link: /linux/
-  - title: "Vue项目构建流程"
-    details: "如何从0到1搭建一个vue的项目。"
-    link: /structure/
-  - title: "项目实战"
+  - title: "手把手教你写一个企业级项目"
     details: "带你从0到1完成一个企业级项目。"
-    link: /project/s
+    link: /project/
 
 
 # https://github.dev/process1024/vitepress
