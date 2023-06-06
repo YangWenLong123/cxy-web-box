@@ -3,7 +3,7 @@
  * @Description:
  * @Date: 2023-05-26 14:47:28
  * @LastEditors: along
- * @LastEditTime: 2023-06-06 17:13:19
+ * @LastEditTime: 2023-06-06 22:07:40
  * @FilePath: /cxy-web-box/docs/.vitepress/config.js
  */
 import { defineConfig } from 'vitepress'
@@ -345,14 +345,14 @@ export default defineConfig({
           text: '进阶',
           items: [
             { text: 'Interface', link: '/ts/ts-19.md' },
-            { text: '', link: '/ts/ts-20.md' },
-            { text: '', link: '/ts/ts-21.md' },
-            { text: '', link: '/ts/ts-22.md' },
-            { text: '', link: '/ts/ts-23.md' },
-            { text: '', link: '/ts/ts-24.md' },
-            { text: '', link: '/ts/ts-25.md' },
-            { text: '', link: '/ts/ts-26.md' },
-            { text: '', link: '/ts/ts-27.md' },
+            { text: '泛型', link: '/ts/ts-20.md' },
+            { text: '类型断言', link: '/ts/ts-21.md' },
+            { text: '类型别名', link: '/ts/ts-22.md' },
+            { text: '类', link: '/ts/ts-23.md' },
+            { text: '类与接口', link: '/ts/ts-24.md' },
+            { text: '声明合并', link: '/ts/ts-25.md' },
+            { text: '声明文件', link: '/ts/ts-26.md' },
+            { text: '扩展阅读', link: '/ts/ts-27.md' },
           ]
         },
         {
