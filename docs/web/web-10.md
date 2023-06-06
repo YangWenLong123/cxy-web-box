@@ -1,8 +1,8 @@
-#### 前言
+## 前言
 
 模拟一个简单在线的socket请求，服务端使用node.js。
 
-#### readyState
+## readyState
 
 ```js
 CONNECTING：值为0，表示正在连接。
@@ -11,7 +11,7 @@ CLOSING：值为2，表示连接正在关闭。
 CLOSED：值为3，表示连接已经关闭，或者打开连接失败。
 ```
 
-#### 服务端
+## 服务端
 
 ```js
 //index.js
@@ -44,7 +44,7 @@ server.on('connection', socket => {
 });
 ```
 
-#### 客户端
+## 客户端
 
 ```js
 <!DOCTYPE html>
@@ -122,7 +122,7 @@ server.on('connection', socket => {
 </html>
 ```
 
-#### 心跳保活
+## 心跳保活
 
 在实际使用 WebSocket 中，长时间不通消息可能会出现一些连接不稳定的情况，这些未知情况导致的连接中断会影响客户端与服务端之前的通信，
 
@@ -136,7 +136,7 @@ setInterval(() => {
 }, 60000)
 ```
 
-#### 运行
+## 运行
 
 ```js
 nodemon index.js

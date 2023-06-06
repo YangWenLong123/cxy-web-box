@@ -1,4 +1,4 @@
-#### 前言
+## 前言
 
 canvas元素用于生成图像。它本身就像一个画布，JavaScript 通过操作它的 API，在上面生成图像。它的底层是一个个像素，基本上canvas是一个可以用 JavaScript 操作的位图（bitmap）。
 

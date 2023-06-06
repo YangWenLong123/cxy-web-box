@@ -1,4 +1,4 @@
-#### 介绍
+## 介绍
 
 要存储多个元素，一般都会选择数组，但是这种数据结构有一个缺点：一般数组的大小都是固定的，从数组的起点或中间插入或移除元素成本有点高。这时候就可以选择链表。
 
@@ -8,7 +8,7 @@
 
 相对于传统的数组，链表的一个好处在于，添加或移除元素的时候不需要移动其他元素。然 而，链表需要使用指针，因此实现链表时需要额外注意。数组的另一个细节是可以直接访问任何 位置的任何元素，而要想访问链表中间的一个元素，需要从起点（表头）开始迭代列表直到找到所需的元素。
 
-#### 创建链表
+## 创建链表
 
 ```js
 function LinkedList() {
@@ -31,7 +31,7 @@ function LinkedList() {
 }
 ```
 
-#### 向链表尾部添加元素
+## 向链表尾部添加元素
 
 两种场景：列表为空，添加的是第一个元素；列表不为空，向其追加元素
 
@@ -54,7 +54,7 @@ this.append = function (element) {
 };
 ```
 
-#### 从链表中移除元素
+## 从链表中移除元素
 
 两种场景：移除第一个元素；移除第一个以外的元素。
 
@@ -84,7 +84,7 @@ this.removeAt = function (position) {
 };
 ```
 
-#### 在任意位置插入元素
+## 在任意位置插入元素
 
 ```js
 this.insert = function (position, element) {
@@ -113,7 +113,7 @@ this.insert = function (position, element) {
 };
 ```
 
-#### toString方法
+## toString方法
 
 ```js
 this.toString = function () {
@@ -127,7 +127,7 @@ this.toString = function () {
 };
 ```
 
-#### indexOf方法
+## indexOf方法
 
 ```js
 this.indexOf = function (element) {
@@ -144,7 +144,7 @@ this.indexOf = function (element) {
 };
 ```
 
-#### isEmpoty方法
+## isEmpoty方法
 
 ```js
 this.isEmpty = function() {
@@ -152,7 +152,7 @@ this.isEmpty = function() {
 };
 ```
 
-#### size方法
+## size方法
 
 ```js
 this.size = function() {
@@ -160,7 +160,7 @@ this.size = function() {
 };
 ```
 
-#### getHead方法
+## getHead方法
 
 ```js
 this.getHead = function(){

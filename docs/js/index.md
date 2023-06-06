@@ -1,4 +1,4 @@
-#### 介绍
+## 介绍
 
 -   基本数据类型：在内存中占据固定大小，直接存储在栈内存中的数据。基本数据类型是按值访问的，可以直接操作保存在变量中的实际值。当我们对基本数据类型进行复制时，会在内存中创建一个新的值，然后把这个新值复制到新的变量中[[0]](https://juejin.cn/post/7196059552122273848)[[1]](https://blog.csdn.net/weixin_41646716/article/details/81700761)[[2]](http://c.biancheng.net/view/9340.html).
 -   引用数据类型：指的是那些保存在内存中的对象。JavaScript中的引用类型是按引用访问的，为了操作对象，实际上是在操作对象的引用而非实际的对象。在复制引用类型时，复制的是指向存储在堆中的对象的指针。因此，两个变量实际上是引用了同一个对象，而不是像复制基本类型一样复制了一个新值[[0]](https://juejin.cn/post/7196059552122273848)[[1]](https://blog.csdn.net/weixin_41646716/article/details/81700761)[[2]](http://c.biancheng.net/view/9340.html).
@@ -14,7 +14,7 @@
 | BigInt                                  | 解决整数溢出                                                                  | 基本数据类型 |
 | object(Function、Array、Date(),RegExp()等) | 指的是那些保存在内存中的对象                                                          | 引用数据类型 |
 
-#### BigInt
+## BigInt
 
 BigInt数据类型的目的是比Number数据类型支持的范围更大的整数值.在对大整数执行数学运算时，以任意精度表示整数的能力尤为重要,使用BigInt，整数溢出将不再是问题.
 
@@ -32,7 +32,7 @@ BigInt数据类型的目的是比Number数据类型支持的范围更大的整�
 9007199254740992n === 9007199254740993n  false
 ```
 
-#### 类型判断
+## 类型判断
 
 typeof：可以对基本类型作出准确的判断，但是对于引用类型，就不是很友好了。在对于引用类型返回的都是object.
 
@@ -69,7 +69,7 @@ console.log(typeOf(new Date())); // Date
 console.log(typeOf(new RegExp())); // RegExp
 ```
 
-#### 特殊类型数据判断
+## 特殊类型数据判断
 
 -   语法：obj instanceof Type
 -   功能：判断 obj 是不是 Type 类的实例，只可用来判断引用数据
@@ -107,6 +107,6 @@ function myInstanceof(Fn, obj) {
 }
 ```
 
-#### 总结
+## 总结
 
 基本类型一般用typeof(), 引用类型用Object.prototype.toString.call().

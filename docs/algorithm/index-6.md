@@ -1,4 +1,4 @@
-#### 介绍
+## 介绍
 
 **散列**是一种常用的数据存储技术，散列后的数据可以快速的插入或取用。散列所使用的数据结构叫散列表。
 
@@ -6,13 +6,13 @@
 
 **基本特点：** 插入，删除，取用数据都非常快，但是查询效率很低，如果你希望快速查找一般是借助其他的数据结构，比如二叉查找树。
 
-#### 示例
+## 示例
 
 我们将要使用最常见的散列函 数——“lose lose”散列函数，方法是简单地将每个键值中的每个字母的ASCII值相加。
 
 ![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4824b82551a64261a7320569215d17dc~tplv-k3u1fbpfcp-zoom-1.image)
 
-#### HashTable类
+## HashTable类
 
 先实一个简单的散列函数，它是HashTable类中的一个私有方法：
 
@@ -26,7 +26,7 @@ var loseloseHashCode = function (key) {
 };
 ```
 
-#### 完整代码
+## 完整代码
 
 ```js
 class hashTable {

@@ -1,4 +1,4 @@
-#### 学习知识图谱
+## 学习知识图谱
 
 ![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a347507aaf9e45beace9fc364d5c76eb~tplv-k3u1fbpfcp-zoom-1.image)
 
@@ -6,7 +6,7 @@
 
 ![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/93e6051449a7401bb0ee5ef07fd27aad~tplv-k3u1fbpfcp-zoom-1.image)
 
-#### 学习文档
+## 学习文档
 
 TypeScript入门教程
 

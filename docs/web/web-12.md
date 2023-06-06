@@ -2,7 +2,7 @@ xe-ajax用于浏览器和node.js的HTTP客户端的请求
 
 <https://github.com/xuliangzhan/xe-ajax>
 
-#### 介绍
+## 介绍
 
 1.  fetch请求默认不带cookie
 
@@ -35,13 +35,13 @@ xe-ajax用于浏览器和node.js的HTTP客户端的请求
 1.  1.  chrome,edge,firefox,opera新版兼容
     1.  ie，safari未兼容
 
-#### 语法    
+## 语法    
 
 ```js
 Promise<Response> fetch(input[, init]);
 ```
 
-#### 参数
+## 参数
 
 1.  input
 
@@ -73,7 +73,7 @@ Promise<Response> fetch(input[, init]);
 3.  referrerPolicy:指定了HTTP头部的referer字段的值。可能为：no-referrer,no-referrer-when-downgrade,origin,origin-when-cross-origin,unsafe-url
 3.  integrity:包含请求的 [subresource integrity](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity)
 
-#### 用法
+## 用法
 
 -   基础用法
 

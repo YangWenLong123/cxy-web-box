@@ -1,4 +1,4 @@
-#### 前言
+## 前言
 
 JavaScript 函数是一个基本组件，是一组执行任务或计算值的语句。在 JavaScript 中，每个函数都是一个 Function 对象。函数通过 function 关键字定义，后面跟着函数名和圆括号。圆括号中可以包括由逗号分隔的参数。由函数执行的代码被放置在花括号中。
 
@@ -8,7 +8,7 @@ function name(参数 1, 参数 2, 参数 3) {
 }
 ```
 
-#### 函数声明
+## 函数声明
 
 -   function声明函数
 
@@ -50,7 +50,7 @@ var objectName = {
 };
 ```
 
-#### 函数参数的数量
+## 函数参数的数量
 
 JavaScript 函数的行参数量是指在函数定义时声明的参数个数。在 JavaScript 中，函数可以有零个或多个参数，这些参数用逗号分隔，放在函数名后的一对圆括号内
 
@@ -74,7 +74,7 @@ function Fn (a,b,c=2) {
 };
 ```
 
-#### Function.name
+## Function.name
 
 返回函数声明的名称
 
@@ -88,7 +88,7 @@ const Fn = function () {};
 Fn.name	//Fn
 ```
 
-#### Function.arguments
+## Function.arguments
 
 arguments 是一个对应于传递给函数的参数的类数组对象。
 
@@ -111,7 +111,7 @@ function fn (a,b,c) {
 fn(1,2,3);
 ```
 
-#### Function.caller()
+## Function.caller()
 
 -   指向当前对象
 
@@ -123,14 +123,14 @@ let num = [1,2,3,4,5].map(function (n) {
 //[1,2,6,24,120]
 ```
 
-####
+##
 
-####
+##
 
-####
+##
 
-####
+##
 
-####
+##
 
-####
+##

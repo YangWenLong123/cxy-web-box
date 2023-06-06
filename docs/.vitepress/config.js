@@ -3,13 +3,13 @@
  * @Description:
  * @Date: 2023-05-26 14:47:28
  * @LastEditors: along
- * @LastEditTime: 2023-06-06 15:10:01
+ * @LastEditTime: 2023-06-06 17:13:19
  * @FilePath: /cxy-web-box/docs/.vitepress/config.js
  */
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  lang: 'en-US',
+  // lang: 'en-US',
   title: 'Web Box',
   description: 'Just playing around.',
   lastUpdated: true,
@@ -517,7 +517,7 @@ export default defineConfig({
         {
           text: '前言',
           items: [
-            { text: '前言', link: '/uniapp/' },
+            { text: '介绍', link: '/uniapp/' },
             { text: '文章', link: '/uniapp/uniapp-1.md' },
             { text: '常见问题', link: '/uniapp/uniapp-2.md' },
           ]

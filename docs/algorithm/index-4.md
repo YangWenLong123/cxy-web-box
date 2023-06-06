@@ -1,10 +1,10 @@
-#### 介绍
+## 介绍
 
 集合是由一组无序且唯一(即不能重复)的项组成的。比如由一个大于等于0的整数组成的集合：N={0,1,2,3,4,5,6,...}。
 
 还有一个概念叫空集。用'{}'表示。
 
-#### 创建集合
+## 创建集合
 
 我们使用对象来表示集合。
 
@@ -14,7 +14,7 @@ function Set() {
 }
 ```
 
-#### 常见方法
+## 常见方法
 
 ```js
 add(value)：向集合添加一个新的项。
@@ -24,7 +24,7 @@ size()：返回集合所包含元素的数量。与数组的length属性类似�
 values()：返回一个包含集合中所有值的数组。
 ```
 
-#### has方法
+## has方法
 
 ```js
 this.has = function(value){
@@ -38,7 +38,7 @@ this.has = function(value){
 };
 ```
 
-#### add方法
+## add方法
 
 ```js
 this.add = function (value) {
@@ -50,7 +50,7 @@ this.add = function (value) {
 };
 ```
 
-#### remove方法
+## remove方法
 
 ```js
 this.remove = function (value) {
@@ -62,7 +62,7 @@ this.remove = function (value) {
 };
 ```
 
-#### clear方法
+## clear方法
 
 ```js
 this.clear = function(){
@@ -70,7 +70,7 @@ this.clear = function(){
 };
 ```
 
-#### size方法
+## size方法
 
 ```js
 this.size = function(){
@@ -78,7 +78,7 @@ this.size = function(){
 };
 ```
 
-#### values方法
+## values方法
 
 values方法也应用了相同的逻辑，提取items对象的所有属性，以数组的形式返回
 
@@ -92,7 +92,7 @@ this.values = function () {
 };
 ```
 
-#### 使用set类
+## 使用set类
 
 ```js
 let set = new Set();
@@ -110,7 +110,7 @@ set.remove(2);
 console.log(set.values()); //输出[]
 ```
 
-#### 集合的一些操作
+## 集合的一些操作
 
 高中数学课本里也有。
 
@@ -121,7 +121,7 @@ console.log(set.values()); //输出[]
 子集：验证一个给定集合是否是另一集合的子集。
 ```
 
-#### 并集
+## 并集
 
 并集的数学概念是集合A和集合B的并集，表示为：*A*∪*B，* 集合定义如下：
 
@@ -165,7 +165,7 @@ console.log(unionAB.values());
 ["1", "2", "3", "4", "5", "6"]
 ```
 
-#### 交集
+## 交集
 
 交集的数学概念是集合A和集合B的交集，表示为：*A*∩*B，集合的定义如下：*
 
@@ -206,7 +206,7 @@ console.log(intersectionAB.values());
 ["2", "3"]
 ```
 
-#### 差集
+## 差集
 
 差集的数学概念是集合A和集合B的差集，表示为：*A-* *B，集合的定义如下：*
 
@@ -247,7 +247,7 @@ console.log(differenceAB.values());
 ["1"]
 ```
 
-#### 子集
+## 子集
 
 子集的数学概念是集合A是集合B的子集，表示为：*A*⊆*B* *，集合的定义如下：*
 

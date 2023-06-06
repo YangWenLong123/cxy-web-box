@@ -1,4 +1,4 @@
-#### 前言
+## 前言
 
 JavaScript 语言采用的是单线程模型，也就是说，所有任务只能在一个线程上完成，一次只能做一件事。前面的任务没做完，后面的任务只能等着。随着电脑计算能力的增强，尤其是多核 CPU 的出现，单线程带来很大的不便，无法充分发挥计算机的计算能力。
 
@@ -6,7 +6,7 @@ Web Worker 的作用，就是为 JavaScript 创造多线程环境，允许主线
 
 Worker 线程一旦新建成功，就会始终运行，不会被主线程上的活动（比如用户点击按钮、提交表单）打断。这样有利于随时响应主线程的通信。但是，这也造成了 Worker 比较耗费资源，不应该过度使用，而且一旦使用完毕，就应该关闭。
 
-#### API
+## API
 
 接受两个参数，jsUrl可以传递多个脚本文件地址, options是个对象可选，{name: 'name1'}，用于指定Worker的名称，页用来区分多个Worker线程.
 
@@ -14,7 +14,7 @@ Worker 线程一旦新建成功，就会始终运行，不会被主线程上的�
 var myWorker = new Worker(jsUrl, options);
 ```
 
-#### 基本用法
+## 基本用法
 
 主线程
 
@@ -43,7 +43,7 @@ worker.onmessage = function (event) {
 }
 ```
 
-#### Worker线程
+## Worker线程
 
 Worker线程内部需要有一个onmessage方法来监听主线程发来的消息,有以下几种监听方式,推荐使用最后一种，因为代码量少.
 
@@ -71,7 +71,7 @@ onmessage = function (event) {
 this.close();
 ```
 
-#### Worker加载脚本
+## Worker加载脚本
 
 Worker()内部如果要加载其它脚本,可以使用importScripts()方法,支持加载多个脚本.
 
@@ -79,7 +79,7 @@ Worker()内部如果要加载其它脚本,可以使用importScripts()方法,支�
 importScript('next.js', 'next2.js');
 ```
 
-#### Worker异常监听
+## Worker异常监听
 
 主线程可以监听Worker是否发生错误，发生错误,就会触发主线程的error事件.
 
@@ -95,7 +95,7 @@ worker.addEventListener('error', function (event) {
 
 注: Worker内部也可以监听error事件.
 
-#### Worker数据通信
+## Worker数据通信
 
 主线程与Worker线程通信传输数据可以是任意数据类型，也可以是二进制数据，需要注意的是这种通信关系，是传值，而不是传引用地址，即Worker线程对数据进行修改，不会影响主线程的数据.
 
@@ -130,7 +130,7 @@ var ab = new ArrayBuffer(1);
 worker.postMessage(ab, [ab]);
 ```
 
-#### 同页面的Worker
+## 同页面的Worker
 
 一般情况下，Worker载入的是一个单独的Js脚本文件，但是页可以载入与主线程在同一个页面的代码.
 
@@ -166,7 +166,7 @@ worker.onmessage = function (e) {
 };
 ```
 
-#### 示例
+## 示例
 
 轮询查询状态的变化，比如支付状态，成功状态等
 
@@ -191,7 +191,7 @@ pollingWorker.onmessage = function () {
 pollingWorker.postMessage('init');
 ```
 
-#### 参考
+## 参考
 
 web worker使用教程：<http://www.ruanyifeng.com/blog/2018/07/web-worker.html>
 
@@ -207,4 +207,4 @@ MDN: <https://developer.mozilla.org/zh-CN/docs/Web/API/Web_Workers_API>
 
 Web Worker实用指南: <https://segmentfault.com/a/1190000038495018>
 
-####
+##

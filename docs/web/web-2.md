@@ -1,12 +1,12 @@
-#### 文档地址
+## 文档地址
 
 <http://html2canvas.hertzen.com/configuration>
 
-#### 预览
+## 预览
 
 ![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f61d18e5f8934a6ab4889bdc4ceeb789~tplv-k3u1fbpfcp-zoom-1.image)
 
-#### 下载海报
+## 下载海报
 
 ```js
 //海报DOM结构 img标签添加crossOrigin属性，用于解决图片跨域无法生成截图
@@ -70,7 +70,7 @@ base64ToBlob(code) {
   }
 ```
 
-#### 下载在线图片
+## 下载在线图片
 
 ```js
 //src:图片地址 imgName:图片名称
@@ -99,7 +99,7 @@ downImages (src,imgName) {
 }
 ```
 
-#### 跨域问题
+## 跨域问题
 
 原因：图片cdn的域名与当前域名不同，如果域名相同不会产生跨域问题
 

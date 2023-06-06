@@ -1,4 +1,4 @@
-#### 介绍
+## 介绍
 
 栈（stack） 栈stack为自动分配的内存空间，它由系统自动释放
 
@@ -8,7 +8,7 @@
 
 [http://latentflip.com/loupe](http://latentflip.com/loupe/?code=JC5vbignYnV0dG9uJywgJ2NsaWNrJywgZnVuY3Rpb24gb25DbGljaygpIHsKICAgIHNldFRpbWVvdXQoZnVuY3Rpb24gdGltZXIoKSB7CiAgICAgICAgY29uc29sZS5sb2coJ1lvdSBjbGlja2VkIHRoZSBidXR0b24hJyk7ICAgIAogICAgfSwgMjAwMCk7Cn0pOwoKY29uc29sZS5sb2coIkhpISIpOwoKc2V0VGltZW91dChmdW5jdGlvbiB0aW1lb3V0KCkgewogICAgY29uc29sZS5sb2coIkNsaWNrIHRoZSBidXR0b24hIik7Cn0sIDUwMDApOwoKY29uc29sZS5sb2coIldlbGNvbWUgdG8gbG91cGUuIik7!!!PGJ1dHRvbj5DbGljayBtZSE8L2J1dHRvbj4%3D)
 
-#### 数据类型
+## 数据类型
 
 -   基本类型：String、Number、Boolean、Null、Undefined、symbol（ES6）
 
@@ -24,7 +24,7 @@
 
 -    引用类型占据空间大、大小不固定, 栈内存中存放地址指向堆(heap)内存中的对象。是按引用访问的
 
-#### 堆栈
+## 堆栈
 
 -   堆：用于引用数据类型（数组，对象，函数）分配空间，从栈内存指向堆内存的数据结构
 
@@ -99,7 +99,7 @@ b = a
 
 结论：栈内存虽然复制了a，但是创建了新的队列。修改b的值的同时也不会改变a的值。
 
-#### 代码实现
+## 代码实现
 
 使用数组实现栈的结构
 
@@ -150,7 +150,7 @@ newStack.clear();
 newStack.show()
 ```
 
-#### 栈内存溢出
+## 栈内存溢出
 
 调用堆栈会一直增长，直到达到限制，浏览器硬编码堆栈大小或内存耗尽。所以在用递归函数时要给一个终止条件。
 
@@ -166,7 +166,7 @@ fn()
 //Maximum call stack size exceeded
 ```
 
-#### History API与浏览器堆栈管理
+## History API与浏览器堆栈管理
 
 pushState，它会向浏览器的历史堆栈压入一个url为设定值的记录，并改变历史堆栈的当前指针至栈顶。
 

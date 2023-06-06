@@ -1,8 +1,8 @@
-#### 描述
+## 描述
 
 给定一个字符串，去除重复的字符，并计算每个字符出现的次数
 
-#### 实现
+## 实现
 
 ```js
 var lengthOfLongestSubstring = function(s) {

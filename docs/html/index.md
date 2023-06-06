@@ -33,7 +33,7 @@ HTML (HyperText Markup Language) 不是一门编程语言，而是一种用来�
 </html>
 ```
 
-#### DOCTYPE
+## DOCTYPE
 
 1.  <!DOCTYPE>说明
 
@@ -74,7 +74,7 @@ HTML (HyperText Markup Language) 不是一门编程语言，而是一种用来�
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 ```
 
-#### HTML 语言代码
+## HTML 语言代码
 
 ``` html
 <html lang="en">
@@ -249,7 +249,7 @@ HTML (HyperText Markup Language) 不是一门编程语言，而是一种用来�
 | Yoruba                    | yo     |
 | Zulu                      | zu     |
 
-#### head标签
+## head标签
 
 1.  head 元素是所有头部元素的容器。
 1.  head 元素必须包含文档的标题（title），可以包含脚本、样式、meta 信息 以及其他更多的信息。
@@ -267,7 +267,7 @@ HTML (HyperText Markup Language) 不是一门编程语言，而是一种用来�
 </head>
 ```
 
-#### meta标签
+## meta标签
 
 1.  描述HTML文档的元数据
 
@@ -286,11 +286,11 @@ HTML (HyperText Markup Language) 不是一门编程语言，而是一种用来�
 </head>
 ```
 
-#### title标签
+## title标签
 
 title 标签定义文档的标题，在所有 HTML 文档中是必需的。
 
-#### body标签
+## body标签
 
 1.  body 标签定义文档的主体。
 1.  body 元素包含文档的所有内容（比如文本、超链接、图像、表格和列表等等）。
@@ -302,7 +302,7 @@ title 标签定义文档的标题，在所有 HTML 文档中是必需的。
 | 行内元素 | 与其它元素在一行      | 不可设                 | 水平方向的margin,padding有用，竖直方向没用 |
 | 块元素  | 独占一行，默认垂直向下排列 | 可设置宽高，没有设置宽时，默认100% | margin,pading水平，竖直方向都可以      |
 
-#### 块元素转换
+## 块元素转换
 
 ``` json
 转换为行内元素：display：inline
@@ -312,14 +312,14 @@ title 标签定义文档的标题，在所有 HTML 文档中是必需的。
 转换为行内块元素：display：inline-block
 ```
 
-#### 常见的行内元素
+## 常见的行内元素
 
 ``` html
 <span>、<a>、 <img>、 <input>、<textarea>、<select>、<label>
 <br>  、<b>、 <strong>、<sup> 、<sub>、 <i> 、<em> 、<del> 、 <u>
 ```
 
-#### 常见的块元素
+## 常见的块元素
 
 ``` html
 <div>、<table>、<form>、<p>、<ul> <h1>......<h6>、<hr>  、<pre>、<address>、<center>、<marquee> 、<blockquote>

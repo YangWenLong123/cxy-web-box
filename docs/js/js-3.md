@@ -1,4 +1,4 @@
-#### 声明变量
+## 声明变量
 
 在 JavaScript 中，变量是用于存储信息的“容器”。变量的值可以重复赋值，最后的赋值是变量的最终结果。JavaScript 允许变量被重复声明，但是重复声明会被跳过，不再执行声明的操作。变量名称必须以字母开头，也可以使用 $ 和 _ 符号开头（不过不推荐这么做），变量名称对大小写敏感。
 
@@ -10,7 +10,7 @@
 | [let](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/let)     | let x = 22;                  | 声明一个块作用域的局部变量，可选初始化一个值 |
 | [const](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/const) | const y = { sex: 'ZhangXX' } | 声明一个块作用域的只读常量          |
 
-#### 变量赋值
+## 变量赋值
 
 用var和let语句声明的变量，如果没有初始赋值，则值为undefined;
 
@@ -36,7 +36,7 @@ var a = 1;
 console.log(b);	//b is not defined
 ```
 
-#### 变量作用域
+## 变量作用域
 
 -   JavaScript中有两种作用域类型：局部作用域和全局作用域，每个函数创建一个新的作用域。
 -   JavaScript采用静态作用域，即在定义时确定了变量作用域的范围，而不是在运行时确定。
@@ -67,15 +67,15 @@ if (true) {
 console.log(y); // ReferenceError: y is not defined
 ```
 
-#### 为什么存在变量提升
+## 为什么存在变量提升
 
 JavaScript引擎在读取JavaScript代码时分为两个步骤。第一步是解析读取整个JavaScript代码，第二步是执行代码。在执行JavaScript代码之前，浏览器的解析器会将变量名和整个函数提升到当前作用域的最前面。这就是所谓的变量提升和函数提升。
 
 在编译阶段，JS引擎会扫描整段代码并将所有变量和函数声明添加到名为“词法环境”的JavaScript数据结构中。在词法环境中，函数声明优先于变量声明，因此函数提升优先级比变量提升要高。
 
-####
+##
 
-#### 变量提升
+## 变量提升
 
 在ECMAScript5中var声明变量会存在变量提升.
 
@@ -110,9 +110,9 @@ console.log(x);	//ReferenceError: Cannot access 'x' before initialization
 let x = 1;
 ```
 
-####
+##
 
-#### 函数变量提升
+## 函数变量提升
 
 函数提升只针对具名函数，而对于赋值的匿名函数，并不会存在函数提升。
 
@@ -129,9 +129,9 @@ var Fb = function () {
 }
 ```
 
-####
+##
 
-#### 变量提升和函数提升的优先级
+## 变量提升和函数提升的优先级
 
 上面说到函数的提升是优于变量提升的, 所以在函数和变量命名时，尽量避免命名冲突的问题。
 
@@ -145,7 +145,7 @@ function Fn() {
 var Fn = 1;
 ```
 
-#### 字面量
+## 字面量
 
 在 JavaScript 中，你可以使用各种字面量。这些字面量是脚本中按字面意思给出的固定的值，而不是变量。（译注：字面量是常量，其值是固定的，而且在程序脚本运行中不可更改，比如false，3.1415.
 

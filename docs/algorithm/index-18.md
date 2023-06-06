@@ -1,12 +1,12 @@
 ### 数组扁平化
 
-#### 示例
+## 示例
 
 ```js
 const arr = [1, [2, [3, 4]], 5, [6]];
 ```
 
-#### 方法
+## 方法
 
 1.递归
 
@@ -42,7 +42,7 @@ const flatten = (arr) => {
 }
 ```
 
-#### 运行结果
+## 运行结果
 
 ```js
 const result = flatten(arr);
@@ -54,7 +54,7 @@ console.log(result);
 
 ### 数组转树形结构
 
-#### 示例
+## 示例
 
 ```js
 const arr = [
@@ -101,7 +101,7 @@ const arr = [
 ]
 ```
 
-#### 方法
+## 方法
 
 1.非递归
 
@@ -143,7 +143,7 @@ const arrayToTree = (arr, pid) => {
 }
 ```
 
-#### 运行结果
+## 运行结果
 
 ```js
 // const result = arrayToTree(arr);
@@ -203,7 +203,7 @@ console.log(result);
 
 ### 树形结构转数组(扁平化)
 
-#### 示例
+## 示例
 
 ```js
 const tree = [
@@ -256,7 +256,7 @@ const tree = [
 ]
 ```
 
-#### 方法
+## 方法
 
 1.深度优先遍历
 
@@ -306,7 +306,7 @@ const treeToArray = (tree) => {
 }
 ```
 
-#### 运行结果
+## 运行结果
 
 ```js
 const result = treeToArray(tree);
@@ -359,7 +359,7 @@ console.log(result);
 
 ### 数筛选,保留符合条件的数据并返回树结构
 
-#### 示例
+## 示例
 
 ```js
 const tree = [
@@ -416,7 +416,7 @@ const tree = [
 ]
 ```
 
-#### 方法
+## 方法
 
 筛选出show=true的数据
 
@@ -436,7 +436,7 @@ const func = (item) => {
 }
 ```
 
-#### 运行结果
+## 运行结果
 
 ```js
 const result = filterTreeByFunc(tree, func);
@@ -478,7 +478,7 @@ console.log(result);
 
 ### 查找某一节点在树中路径
 
-#### 示例
+## 示例
 
 ```js
 const tree = [
@@ -531,7 +531,7 @@ const tree = [
 ]
 ```
 
-#### 方法
+## 方法
 
 ```js
 const getNodePath = (tree, id) => {
@@ -559,7 +559,7 @@ const getNodePath = (tree, id) => {
 }
 ```
 
-#### 运行结果
+## 运行结果
 
 ```js
 const result = getNodePath(tree, 112);
@@ -571,7 +571,7 @@ console.log(result);
 
 ### 模糊查询树
 
-#### 示例
+## 示例
 
 ```js
 const tree = [
@@ -624,7 +624,7 @@ const tree = [
 ]
 ```
 
-#### 方法
+## 方法
 
 ```js
 const fuzzyQueryTree = (arr, value) => {
@@ -651,7 +651,7 @@ const fuzzyQueryTree = (arr, value) => {
 };
 ```
 
-#### 运行结果
+## 运行结果
 
 ```js
 const result = fuzzyQueryTree(tree,'程序');
@@ -696,7 +696,7 @@ console.log(result);
 
 ### 树节点添加属性
 
-#### 示例
+## 示例
 
 ```js
 const tree = [
@@ -749,7 +749,7 @@ const tree = [
 ]
 ```
 
-#### 方法
+## 方法
 
 ```js
 const addAttrToNodes = (tree) => {
@@ -763,9 +763,9 @@ const addAttrToNodes = (tree) => {
 }
 ```
 
-####
+##
 
-#### 运行结果
+## 运行结果
 
 ```js
 const result = addAttrToNodes(tree);
@@ -832,7 +832,7 @@ console.log(result);
 
 ### 树节点删除属性
 
-#### 示例
+## 示例
 
 ```js
 const tree = [
@@ -885,7 +885,7 @@ const tree = [
 ]
 ```
 
-#### 方法
+## 方法
 
 ```js
 const removeAttrFromNode = (tree) => {
@@ -899,7 +899,7 @@ const removeAttrFromNode = (tree) => {
 }
 ```
 
-#### 运行结果
+## 运行结果
 
 ```js
 const result = removeAttrFromNode(tree);
@@ -958,7 +958,7 @@ console.log(result);
 
 ### 删除树中的空childre
 
-#### 示例
+## 示例
 
 ```js
 const tree = [
@@ -1014,7 +1014,7 @@ const tree = [
 ]
 ```
 
-#### 方法
+## 方法
 
 ```js
 const removeEmptyChildren = (tree) => {
@@ -1029,7 +1029,7 @@ const removeEmptyChildren = (tree) => {
 }
 ```
 
-#### 运行结果
+## 运行结果
 
 ```js
 const result = removeEmptyChildren(tree);
@@ -1088,7 +1088,7 @@ console.log(result);
 
 ### 获取树中所有的叶子节点
 
-#### 示例
+## 示例
 
 ```js
 const tree = [
@@ -1141,7 +1141,7 @@ const tree = [
 ]
 ```
 
-#### 方法
+## 方法
 
 ```js
 const getAllLeaf = (tree) => {
@@ -1160,7 +1160,7 @@ const getAllLeaf = (tree) => {
 }
 ```
 
-#### 运行结果
+## 运行结果
 
 ```js
 const result = getAllLeaf(tree);

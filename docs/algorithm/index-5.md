@@ -1,8 +1,8 @@
-#### 前言
+## 前言
 
 在字典中，存储的时[键,值]对，其中键名是用来查询元素的，字典也称之为映射。
 
-#### 创建字典
+## 创建字典
 
 与Set类相似，ECMAScript 6同样包含了一个Map类的实现，即我们所说的字典。你会发现它和Set类很相似（但不同于存储[值，值]对的形式，我们将要存储的是[键，值]对）。
 
@@ -12,7 +12,7 @@ function Dictionary() {
 }
 ```
 
-#### 方法
+## 方法
 
 ```js
 set(key,value)：向字典中添加新元素。
@@ -24,7 +24,7 @@ keys()：将字典所包含的所有键名以数组形式返回。
 values()：将字典所包含的所有数值以数组形式返回。
 ```
 
-#### has方法
+## has方法
 
 首先实现has(key)方法，后面会被set和remove等方法调用。
 
@@ -34,7 +34,7 @@ this.has = function(key) {
 };
 ```
 
-#### set方法
+## set方法
 
 该方法接受一个key和value作为参数
 
@@ -44,7 +44,7 @@ this.set = function(key, value) {
 };
 ```
 
-#### delete方法
+## delete方法
 
 该方法接受一个key值，使用has方法查询是否存在，存在则删除
 
@@ -58,7 +58,7 @@ this.delete = function (key) {
 };
 ```
 
-#### get方法
+## get方法
 
 ```js
 this.get = function (key) {
@@ -66,7 +66,7 @@ this.get = function (key) {
 };
 ```
 
-#### values方法
+## values方法
 
 ```js
 this.values = function () {
@@ -80,7 +80,7 @@ this.values = function () {
 };
 ```
 
-#### clear方法
+## clear方法
 
 ```js
 this.clear = function(){
@@ -88,7 +88,7 @@ this.clear = function(){
 };
 ```
 
-#### size方法
+## size方法
 
 ```js
 this.size = function(){
@@ -96,7 +96,7 @@ this.size = function(){
 };
 ```
 
-#### keys方法
+## keys方法
 
 ```js
 this.keys = function() {
@@ -104,7 +104,7 @@ this.keys = function() {
 };
 ```
 
-#### getItems方法
+## getItems方法
 
 ```js
 this.keys = function() {
@@ -112,7 +112,7 @@ this.keys = function() {
 };
 ```
 
-#### 使用场景
+## 使用场景
 
 对象本身作为字典
 
