@@ -66,7 +66,7 @@ features:
   # - title: "react"
   #   details: "React是一种非常流行的JavaScript库，用于构建用户界面。"
   #   link: /react/
-  - title: "Linux"
+  - title: "Linux手册"
     details: "Linux的常用指令"
     link: /linux/
   - title: "手把手教你写一个企业级项目"

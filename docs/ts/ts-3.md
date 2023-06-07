@@ -82,23 +82,21 @@ const nu: void = null;
 
 -   在 TypeScript 中，可以使用 `null` 和 `undefined` 来定义这两个原始数据类型：
 
-js```
-```
+```js
 const u: undefined = undefined;
 const n: null = null;
 ```
 
 -   与void的区别是null和undefined是所有类型的子类型
 
-js```
-```
+
+```js
 const num: number = undefined;	//这样写不会报错——测试还有有报错提示
 ```
 
 -   也可以这样去写
 
-js```
-```
+```js
 const n: undefined
 const m: number = n;
 
@@ -109,8 +107,7 @@ n === m //true
 
 ## 测试用例
 
-js```
-```
+```js
 let debug:boolean = true;
 let flag:boolean = true;
 let number:number = 1;
