@@ -974,7 +974,7 @@ var servers = [
 
 解释：
 
-[@exports ](</exports >)与 [@module ](</module >)都可以用来标识模块，区别在于 [@module ](</module >)可以省略模块名称。而只使用 [@exports ](</exports >)时在 namepaths 中可以省略 module: 前缀。
+@exports exports与 @module(module)都可以用来标识模块，区别在于 module(module)可以省略模块名称。而只使用 @exports(exports)时在 namepaths 中可以省略 module: 前缀。
 
 示例：
 
@@ -1006,7 +1006,7 @@ define(
 );
 ```
 
-也可以在 exports 变量前使用 [@module ](</module >)标识：
+也可以在 exports 变量前使用 @module 、 module标识：
 
 ```js
 define(
