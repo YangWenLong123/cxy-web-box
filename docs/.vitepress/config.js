@@ -3,7 +3,7 @@
  * @Description:
  * @Date: 2023-05-26 14:47:28
  * @LastEditors: along
- * @LastEditTime: 2023-06-07 20:10:44
+ * @LastEditTime: 2023-06-15 13:03:09
  * @FilePath: /cxy-web-box/docs/.vitepress/config.js
  */
 import { defineConfig } from 'vitepress'
@@ -446,6 +446,7 @@ export default defineConfig({
             { text: '手写组合API', link: '/vue/vue-37.md' },
             { text: 'Composition Api VS option APi', link: '/vue/vue-38.md' },
             { text: '数据传递', link: '/vue/vue-39.md' },
+            { text: 'vue3中如何调用子组件的方法', link: '/vue/vue-42.md' },
             { text: 'Vue3开源组件库', link: '/vue/vue-40.md' },
             { text: 'vue-property-decorator', link: '/vue/vue-41.md' },
           ]
