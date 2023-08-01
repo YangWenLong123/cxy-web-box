@@ -27,7 +27,7 @@ hero:
   #     link: https://github.com/vuejs/vitepress
 
 features:
-  - title: "HtML5"
+  - title: "HTML5"
     details: "HTML5是一种标记语言，用于创建Web页面和应用程序。"
     link: /html/
   - title: "CSS3"
@@ -42,9 +42,6 @@ features:
   - title: "Web Api"
     details: "Web API是Web的应用程序编程接口，可扩展浏览器和服务器的功能"
     link: /web/
-  # - title: "HTTP协议详解"
-  #   details: "HTTP是一种用于传输数据的协议，它可以控制缓存和认证，开放同源限制等。"
-  #   link: /http/
   - title: "TypeScript"
     details: "TypeScript是一种由微软推出的开源编程语言，是JavaScript的超集，可以转换成纯JavaScript代码。"
     link: /ts/
@@ -69,6 +66,9 @@ features:
   - title: "Linux手册"
     details: "Linux的常用指令"
     link: /linux/
+  - title: "HTTP"
+    details: "HTTP是一种用于传输数据的协议，它可以控制缓存和认证，开放同源限制等。"
+    link: /http/
   - title: "手把手教你写一个企业级项目"
     details: "带你从0到1完成一个企业级项目。"
     link: /project/

@@ -1,9 +1,9 @@
 /*
  * @Author: along
- * @Description:
+ * @Description: 配置中心
  * @Date: 2023-05-26 14:47:28
  * @LastEditors: along
- * @LastEditTime: 2023-06-15 13:03:09
+ * @LastEditTime: 2023-08-01 17:17:27
  * @FilePath: /cxy-web-box/docs/.vitepress/config.js
  */
 import { defineConfig } from 'vitepress'
@@ -64,6 +64,12 @@ export default defineConfig({
         rel: 'sponsored'
       },
       {
+        text: '图片',
+        link: "http://xyz.alongweb.top/upload",
+        target: '_self',
+        rel: 'sponsored'
+      },
+      {
         text: '小册',
         link: "http://xyz.alongweb.top/book",
         target: '_self',
@@ -93,12 +99,12 @@ export default defineConfig({
         text: '插件',
         link: "https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd?hl=zh-CN"
       },
-      {
-        text: '友链',
-        items: [
-          { text: '祥祥的前端之旅', link: 'http://www.zxxweb.top' }
-        ]
-      }
+      // {
+      //   text: '友链',
+      //   items: [
+      //     { text: '祥祥的前端之旅', link: 'http://www.zxxweb.top' }
+      //   ]
+      // }
     ],
     sidebar: {
       '/html/': [
@@ -482,6 +488,7 @@ export default defineConfig({
             { text: '数据管理', link: '/structure/structure-17.md' },
             { text: '动态路由', link: '/structure/structure-18.md' },
             { text: 'socket配置', link: '/structure/structure-19.md' },
+            { text: 'socket的应用', link: '/structure/structure-31.md' },
           ]
         },
         {
@@ -489,6 +496,7 @@ export default defineConfig({
           items: [
             { text: '环境变量配置', link: '/structure/structure-20.md' },
             { text: 'vue.config.js', link: '/structure/structure-21.md' },
+            { text: 'vite.config.js', link: '/structure/structure-36.md' },
             { text: 'babel.config.js', link: '/structure/structure-22.md' },
             { text: '.browserslistrc', link: '/structure/structure-23.md' },
             { text: '.editorconfig', link: '/structure/structure-24.md' },
@@ -670,6 +678,51 @@ export default defineConfig({
           ]
         }
       ],
+      'http': [
+        {
+          text: 'HTTP基础',
+          items: [
+            { text: 'HTTP的概述', link: '/http/http1.md' },
+            { text: 'HTTP的发展', link: '/http/http2.md' },
+            { text: 'HTTP的消息', link: '/http/http3.md' },
+            { text: 'HTTP的会话', link: '/http/http4.md' },
+          ]
+        },
+        {
+          text: 'HTTP安全',
+          items: [
+            { text: '内容安全策略（CSP）', link: '/http/http5.md' },
+            { text: 'Strict-Transport-Security', link: '/http/http6.md' },
+            { text: 'HTTP Cookie', link: '/http/http7.md' },
+            { text: 'X-Content-Type-Options', link: '/http/http8.md' },
+            { text: 'X-Frame-Options', link: '/http/http9.md' },
+            { text: 'X-XSS-Protection', link: '/http/http10.md' },
+          ]
+        },
+        {
+          text: 'HTTP进阶',
+          items: [
+            { text: '跨源资源共享（CORS）', link: '/http/http11.md' },
+            { text: 'HTTP 缓存', link: '/http/http12.md' },
+            { text: 'HTTP 协议中的数据压缩', link: '/http/http13.md' },
+            { text: 'HTTP 的重定向', link: '/http/http14.md' },
+            { text: 'HTTP 资源与规范', link: '/http/http15.md' },
+            { text: 'HTTP标头', link: '/http/http16.md' },
+            { text: 'HTTP请求方法', link: '/http/http17.md' },
+            { text: 'HTTP响应状态码', link: '/http/http18.md' }
+          ]
+        },
+        {
+          text: '实战',
+          items: [
+            { text: '强缓存配置', link: '/http/http19.md' },
+            { text: '协商缓存', link: '/http/http22.md' },
+            { text: 'gzip压缩配置', link: '/http/http20.md' },
+            { text: '路由刷新404配置', link: '/http/http21.md' },
+          ]
+        },
+      ],
+
       '/project/': [
         {
           text: '点餐后台管理系统',
