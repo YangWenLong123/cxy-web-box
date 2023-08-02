@@ -8,6 +8,8 @@ Babel是一个工具链，主要用于将 ECMAScript 2015+ 版本的代码转换
   - [查看更多](https://babeljs.io/videos)
 
 
+文档：https://www.babeljs.cn/docs/
+
 ## 结构
 很多人以为Babel只有plugins、presets等几个配置。其实不止，我们看看Babel配置文件大致架构：
 
