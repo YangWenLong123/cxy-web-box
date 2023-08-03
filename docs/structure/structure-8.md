@@ -147,6 +147,12 @@ git checkout master
 git merge '分支名'
 ```
 
+#### 撤回合并分支
+
+```js
+  git reset --merge ' 版本'
+```
+
 #### 删除本地分支
 
 ```js

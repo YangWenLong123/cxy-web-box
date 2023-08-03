@@ -3,7 +3,7 @@
  * @Description: 配置中心
  * @Date: 2023-05-26 14:47:28
  * @LastEditors: along
- * @LastEditTime: 2023-08-01 17:17:27
+ * @LastEditTime: 2023-08-03 11:21:55
  * @FilePath: /cxy-web-box/docs/.vitepress/config.js
  */
 import { defineConfig } from 'vitepress'
@@ -399,7 +399,7 @@ export default defineConfig({
       ],
       '/vue/': [
         {
-          text: 'Vue2基础',
+          text: '基础',
           items: [
             { text: '项目创建', link: '/vue/' },
             { text: '文章', link: '/vue/vue-1.md' },
@@ -419,45 +419,82 @@ export default defineConfig({
             { text: 'Mixins', link: '/vue/vue-15.md' },
             { text: '构造器', link: '/vue/vue-16.md' },
             { text: 'Vuex', link: '/vue/vue-17.md' },
-            { text: '反向代理', link: '/vue/vue-18.md' },
-            { text: '原型挂载', link: '/vue/vue-20.md' },
-            { text: '项目构建配置', link: '/vue/vue-21.md' },
-
           ]
         },
         {
-          text: 'Vue2进阶',
+          text: '进阶',
           items: [
-            { text: 'Docker部署', link: '/vue/vue-19.md' },
             { text: '构建性能优化', link: '/vue/vue-22.md' },
-            { text: '右键实现菜单', link: '/vue/vue-23.md' },
             { text: 'vuex持久化存储', link: '/vue/vue-24.md' },
             { text: '装饰模式应用', link: '/vue/vue-25.md' },
             { text: '常见问题汇总', link: '/vue/vue-26.md' },
-            { text: '插件汇总', link: '/vue/vue-27.md' },
-            { text: '手摸手开发一个插件', link: '/vue/vue-28.md' },
             { text: '源码学习', link: '/vue/vue-29.md' },
             { text: 'Vue Class Component', link: '/vue/vue-30.md' },
           ]
         },
         {
-          text: 'Vue3',
+          text: '实战',
           items: [
-            { text: '2.x与3.x的变化', link: '/vue/vue-31.md' },
-            { text: '开源项目', link: '/vue/vue-32.md' },
-            { text: '学习资源', link: '/vue/vue-33.md' },
-            { text: 'Composition APi初体验', link: '/vue/vue-34.md' },
-            { text: 'Composition APi详解', link: '/vue/vue-35.md' },
-            { text: '图解API', link: '/vue/vue-36.md' },
-            { text: '手写组合API', link: '/vue/vue-37.md' },
-            { text: 'Composition Api VS option APi', link: '/vue/vue-38.md' },
-            { text: '数据传递', link: '/vue/vue-39.md' },
-            { text: 'vue3中如何调用子组件的方法', link: '/vue/vue-42.md' },
-            { text: 'Vue3开源组件库', link: '/vue/vue-40.md' },
-            { text: 'vue-property-decorator', link: '/vue/vue-41.md' },
+            { text: '反向代理', link: '/vue/vue-18.md' },
+            { text: '原型挂载', link: '/vue/vue-20.md' },
+            { text: '项目构建配置', link: '/vue/vue-21.md' },
+            { text: 'Docker部署', link: '/vue/vue-19.md' },
+            { text: '右键实现菜单', link: '/vue/vue-23.md' },
+            { text: '手摸手开发一个插件', link: '/vue/vue-28.md' },
+          ]
+        },
+        {
+          text: '插件',
+          items: [
+            { text: '插件汇总', link: '/vue/vue-27.md' },
+
           ]
         }
       ],
+      '/vue3/': [
+        {
+          text: '学习',
+          items: [
+            { text: '学习资源', link: '/vue3/' },
+            { text: 'Vue3开源组件库', link: '/vue3/vue-9.md' },
+          ]
+        },
+        {
+          text: '基础',
+          items: [
+            { text: 'Composition APi初体验', link: '/vue3/vue-3.md' },
+            { text: 'Composition APi详解', link: '/vue3/vue-4.md' },
+            { text: '图解API', link: '/vue3/vue-5.md' },
+            { text: '手写组合API', link: '/vue3/vue-6.md' },
+            { text: 'Composition Api VS option APi', link: '/vue3/vue-7.md' },
+            { text: '数据传递', link: '/vue3/vue-8.md' },
+            { text: 'vue3中如何调用子组件的方法', link: '/vue3/vue-11.md' },
+          ]
+        },
+        {
+          text: '进阶',
+          items: [
+            { text: 'vue-property-decorator', link: '/vue3/vue-100.md' },
+          ]
+        },
+        {
+          text: '实战',
+          items: []
+        },
+        {
+          text: '插件',
+          items: [
+
+          ]
+        },
+        {
+          text: '闲聊',
+          items: [
+            { text: '2.x与3.x的变化', link: '/vue3/vue-12.md' },
+          ]
+        },
+      ],
+
       '/structure/': [
         { text: '概览', link: '/structure/' },
         { text: '什么是开发规范', link: '/structure/structure-1.md' },
@@ -596,6 +633,38 @@ export default defineConfig({
           ]
         },
       ],
+      '/react/': [
+        {
+          text: '基础',
+          items: []
+        },
+        {
+          text: '进阶',
+          items: []
+        },
+        {
+          text: '实战',
+          items: []
+        },
+        {
+          text: '插件',
+          items: []
+        }
+      ],
+      '/umi/': [
+        {
+          text: '基础',
+          items: []
+        },
+        {
+          text: '进阶',
+          items: []
+        },
+        {
+          text: '实战',
+          items: []
+        }
+      ],
       '/linux/': [
         {
           text: 'Linux手册',
@@ -661,20 +730,6 @@ export default defineConfig({
             { text: 'Linux中的uname命令', link: '/linux/linux-59.md' },
             { text: 'Linux中的env命令', link: '/linux/linux-60.md' },
             { text: 'Linux中的printenv命令', link: '/linux/linux-61.md' },
-            // { text: '', link: '/linux/linux-62.md' },
-            // { text: '', link: '/linux/linux-63.md' },
-            // { text: '', link: '/linux/linux-64.md' },
-            // { text: '', link: '/linux/linux-65.md' },
-            // { text: '', link: '/linux/linux-66.md' },
-            // { text: '', link: '/linux/linux-67.md' },
-            // { text: '', link: '/linux/linux-68.md' },
-            // { text: '', link: '/linux/linux-69.md' },
-            // { text: '', link: '/linux/linux-70.md' },
-            // { text: '', link: '/linux/linux-71.md' },
-            // { text: '', link: '/linux/linux-72.md' },
-            // { text: '', link: '/linux/linux-73.md' },
-            // { text: '', link: '/linux/linux-74.md' },
-            // { text: '', link: '/linux/linux-75.md' }
           ]
         }
       ],
