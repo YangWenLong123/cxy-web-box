@@ -3,7 +3,7 @@
  * @Description: 配置中心
  * @Date: 2023-05-26 14:47:28
  * @LastEditors: along
- * @LastEditTime: 2023-08-03 11:21:55
+ * @LastEditTime: 2023-08-04 14:39:52
  * @FilePath: /cxy-web-box/docs/.vitepress/config.js
  */
 import { defineConfig } from 'vitepress'
@@ -556,7 +556,7 @@ export default defineConfig({
           text: '其它',
           items: [
             { text: '如何减少开发中的BUG', link: '/structure/structure-33.md' },
-            { text: 'NPM插件', link: '/structure/structure-34.md' },
+            { text: 'NPM插件安装', link: '/structure/structure-34.md' },
           ]
         },
       ],
@@ -833,12 +833,13 @@ export default defineConfig({
         }
       ]
     },
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/YangWenLong123' },
-    ],
+    // socialLinks: [
+    //   { icon: 'github', link: 'https://github.com/YangWenLong123' },
+    // ],
     footer: {
       message: '',
       copyright: 'Copyright © 2023 Web Box  <a href="https://beian.miit.gov.cn/" target="__blank">皖ICP备2023007113号</a>'
+      // copyright: 'Copyright ©2023 Zxx Web Box  <a href="https://beian.miit.gov.cn/" target="__blank">皖ICP备2023007113号-1</a>'
     },
     // editLink: {
     //   pattern: 'https://github.com/vuejs/vitepress/edit/main/docs/:path',
