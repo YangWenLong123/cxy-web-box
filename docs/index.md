@@ -68,7 +68,7 @@ features:
     link: /react/
   - title: "umi"
     details: "企业级前端开发框架，构建react, mobile, vue项目"
-    link: /react/
+    link: /umi/
   - title: "Linux手册"
     details: "Linux的常用指令"
     link: /linux/

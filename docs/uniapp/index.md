@@ -1,6 +1,5 @@
-### uniappuniapp是一个使用vue开发所有前端的框架，开发者编写一套代码，可发布到iOS、Android、H5、以及各种小程序（微信/支付宝/百度/头条/QQ/钉钉）等多个平台。
-
-个人学习记录（欢迎stars）： <https://github.com/YangWenLong123/uniapp-study>
+## 介绍
+uniappuniapp是一个使用vue开发所有前端的框架，开发者编写一套代码，可发布到iOS、Android、H5、以及各种小程序（微信/支付宝/百度/头条/QQ/钉钉）等多个平台。
 
 学习博客：<https://www.wangquanwei.com/page/2>
 
