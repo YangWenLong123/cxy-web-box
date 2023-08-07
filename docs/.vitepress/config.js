@@ -3,7 +3,7 @@
  * @Description: 配置中心
  * @Date: 2023-05-26 14:47:28
  * @LastEditors: along
- * @LastEditTime: 2023-08-04 14:39:52
+ * @LastEditTime: 2023-08-07 14:03:43
  * @FilePath: /cxy-web-box/docs/.vitepress/config.js
  */
 import { defineConfig } from 'vitepress'
@@ -665,6 +665,20 @@ export default defineConfig({
           items: []
         }
       ],
+      '/wx/': [
+        {
+          text: '基础',
+          items: []
+        },
+        {
+          text: '进阶',
+          items: []
+        },
+        {
+          text: '实战',
+          items: []
+        }
+      ],
       '/linux/': [
         {
           text: 'Linux手册',
@@ -833,9 +847,9 @@ export default defineConfig({
         }
       ]
     },
-    // socialLinks: [
-    //   { icon: 'github', link: 'https://github.com/YangWenLong123' },
-    // ],
+    socialLinks: [
+      { icon: 'github', link: 'https://github.com/YangWenLong123' },
+    ],
     footer: {
       message: '',
       copyright: 'Copyright © 2023 Web Box  <a href="https://beian.miit.gov.cn/" target="__blank">皖ICP备2023007113号</a>'

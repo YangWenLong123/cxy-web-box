@@ -69,6 +69,9 @@ features:
   - title: "umi"
     details: "企业级前端开发框架，构建react, mobile, vue项目"
     link: /umi/
+  - title: "小程序"
+    details: "小程序开发流程"
+    link: /wx/
   - title: "Linux手册"
     details: "Linux的常用指令"
     link: /linux/
