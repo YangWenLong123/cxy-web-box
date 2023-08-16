@@ -3,7 +3,7 @@
  * @Description: 配置中心
  * @Date: 2023-05-26 14:47:28
  * @LastEditors: along
- * @LastEditTime: 2023-08-07 14:03:43
+ * @LastEditTime: 2023-08-16 19:09:49
  * @FilePath: /cxy-web-box/docs/.vitepress/config.js
  */
 import { defineConfig } from 'vitepress'
@@ -455,26 +455,49 @@ export default defineConfig({
         {
           text: '学习',
           items: [
-            { text: '学习资源', link: '/vue3/' },
-            { text: 'Vue3开源组件库', link: '/vue3/vue-9.md' },
+            { text: '文档', link: '/vue3/' },
+            { text: '开源组件库', link: '/vue3/index1.md' },
           ]
         },
         {
           text: '基础',
           items: [
-            { text: 'Composition APi初体验', link: '/vue3/vue-3.md' },
-            { text: 'Composition APi详解', link: '/vue3/vue-4.md' },
-            { text: '图解API', link: '/vue3/vue-5.md' },
-            { text: '手写组合API', link: '/vue3/vue-6.md' },
-            { text: 'Composition Api VS option APi', link: '/vue3/vue-7.md' },
-            { text: '数据传递', link: '/vue3/vue-8.md' },
-            { text: 'vue3中如何调用子组件的方法', link: '/vue3/vue-11.md' },
+            { text: 'composition api', link: '/vue3/index2.md' },
+            { text: 'life cycle', link: '/vue3/index3.md' },
+            { text: 'setup', link: '/vue3/index4.md' },
+            { text: 'reactive', link: '/vue3/index5.md' },
+            { text: 'ref', link: '/vue3/vue-6.md' },
+            { text: 'isRef', link: '/vue3/vue-7.md' },
+            { text: 'unref', link: '/vue3/vue-8.md' },
+            { text: 'toRefs', link: '/vue3/vue-9.md' },
+            { text: 'toRef', link: '/vue3/vue-10.md' },
+            { text: 'computed', link: '/vue3/vue-11.md' },
+            { text: 'watch', link: '/vue3/vue-12.md' },
+            { text: 'watchEffect', link: '/vue3/vue-13.md' },
+            { text: 'nextTick', link: '/vue3/vue-14.md' },
+            { text: 'shallowReactive', link: '/vue3/vue-15.md' },
+            { text: 'shallowRef', link: '/vue3/vue-16.md' },
+            { text: 'customRef', link: '/vue3/vue-17.md' },
+            { text: 'readonly与shallowReadonly', link: '/vue3/vue-18.md' },
+            { text: 'Template refs', link: '/vue3/vue-19.md' },
+            { text: 'createComponent', link: '/vue3/vue-20.md' },
+            { text: 'getCurrentInstance', link: '/vue3/vue-21.md' },
+            { text: 'Teleport', link: '/vue3/vue-22.md' },
+            { text: 'Fragments', link: '/vue3/vue-23.md' },
+            { text: 'pinia', link: '/vue3/vue-24.md' },
+            { text: 'router', link: '/vue3/vue-25.md' },
+            { text: 'data sharing', link: '/vue3/vue-26.md' },
+            // { text: '图解API', link: '/vue3/vue-5.md' },
+            // { text: '手写组合API', link: '/vue3/vue-6.md' },
+            // { text: 'Composition Api VS option APi', link: '/vue3/vue-7.md' },
+            // { text: '组件数据传递', link: '/vue3/vue-8.md' },
+            // { text: 'pinia', link: '/vue3/vue-9.md' },
           ]
         },
         {
           text: '进阶',
           items: [
-            { text: 'vue-property-decorator', link: '/vue3/vue-100.md' },
+            // { text: 'vue-property-decorator', link: '/vue3/vue-100.md' },
           ]
         },
         {
@@ -490,7 +513,7 @@ export default defineConfig({
         {
           text: '闲聊',
           items: [
-            { text: '2.x与3.x的变化', link: '/vue3/vue-12.md' },
+            // { text: '2.x与3.x的变化', link: '/vue3/vue-12.md' },
           ]
         },
       ],

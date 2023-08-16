@@ -1,22 +1,21 @@
-## 前言
 
-vue3.0版本大概会在八月份发布正式版本，[开发进度表](https://github.com/vuejs/vue/projects/6)，学习之前建议先了解[阮一峰Es6入门教程](https://es6.ruanyifeng.com/)，建议详细阅读[proxy](https://es6.ruanyifeng.com/#docs/proxy)...
+vue3版本[更新记录](https://github.com/vuejs/core/blob/main/CHANGELOG.md)，学习之前建议先了解[阮一峰Es6入门教程](https://es6.ruanyifeng.com/)，建议详细阅读[proxy](https://es6.ruanyifeng.com/#docs/proxy)
 
 ## 资讯
 
-2020.07-18发布RC版本：<https://github.com/vuejs/rfcs/issues/189>
+Vue 2 将于 2023 年 12 月 31 日停止维护。详见 [Vue 2 延长 LTS](https://v2.vuejs.org/lts/)
 
 ## Vue3模版编译在线体验
 
 <https://vue-next-template-explorer.netlify.app/>
 
-## Vue3 Componsition 文档
+## Vue3学习文档
+### `文档`
 
-<https://composition-api.vuejs.org/api.html>
+[vue3中文文档](https://cn.vuejs.org/guide/introduction.html#what-is-vue)
 
-## 破解vue3新特性
+[Vue3模版编译在线体验](https://vue3js.cn/vue-template-explorer)
 
-<http://www.liulongbin.top:8085/#/>
 
 ## Vue3 Compostion API 如何代替 Vue Mixins
 
