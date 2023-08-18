@@ -1,27 +1,49 @@
-## Ant-design-vue
+## 尤大大的github
+https://github.com/yyx990803
 
-<https://antdv.com/docs/vue/introduce-cn/>
+## 官方文档
 
-## Vant 3.0
+[vue3中文文档](https://cn.vuejs.org/guide/introduction.html#what-is-vue)
 
-<https://vant-contrib.gitee.io/vant/next>
+[Vue Router](https://router.vuejs.org/zh/)
 
-## Element3
+[Pinia](https://pinia.vuejs.org/zh/)
 
-<https://github.com/kkbjs/element3>
+[Vue3 API](https://cn.vuejs.org/api/)
 
-## Vue3中文文档
+[Vue CLI](https://cli.vuejs.org/zh/)
 
-<https://vue3js.cn/docs/zh/>
+[Vite](https://cn.vitejs.dev/)
 
-## Element-plus
+[互动教程](https://cn.vuejs.org/tutorial/#step-1)
 
-<https://github.com/element-plus/element-plus>
+[Vue-loader](https://vue-loader-v14.vuejs.org/zh-cn/start/spec.html)
 
-## NutUI
+## 开源组件库
 
-<https://nutui.jd.com/3x/#/>
+http://vuepp.store/
 
-## Varlet
+## UI框架
 
-<https://github.com/haoziqaq/varlet>
+PC端：[Ant-design-vue](https://antdv.com/docs/vue/introduce-cn/)
+
+PC端：[Element-plus](https://element-plus.org/zh-CN/component/button.html)
+
+PC端：[Naive UI](https://www.naiveui.com/zh-CN/light)
+
+PC端/移动端：[Arco Design Vue](https://arco.design/vue/docs/start)
+
+PC端/移动端：[NutUi](https://nutui.jd.com/#/)
+
+移动端：[Varlet](https://varlet.gitee.io/varlet-ui/#/zh-CN/home)
+
+移动端：[ldux](https://idux.site/components/button/zh)
+
+移动端: [Vant](https://vant-contrib.gitee.io/vant/#/zh-CN)
+
+微信小程序: [TDesign](https://tdesign.tencent.com/miniprogram/getting-started)
+
+PC端：[iview](https://prazdevs.github.io/pinia-plugin-persistedstate/zh/guide/)
+
+PC端表格: [ICRUD](https://icrud.iviewui.com/)
+

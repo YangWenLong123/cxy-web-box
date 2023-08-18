@@ -3,7 +3,7 @@
  * @Description: 配置中心
  * @Date: 2023-05-26 14:47:28
  * @LastEditors: along
- * @LastEditTime: 2023-08-16 19:09:49
+ * @LastEditTime: 2023-08-17 17:37:02
  * @FilePath: /cxy-web-box/docs/.vitepress/config.js
  */
 import { defineConfig } from 'vitepress'
@@ -455,15 +455,15 @@ export default defineConfig({
         {
           text: '学习',
           items: [
-            { text: '文档', link: '/vue3/' },
-            { text: '开源组件库', link: '/vue3/index1.md' },
+            { text: '咨询', link: '/vue3/' },
+            { text: '文档资源', link: '/vue3/index1.md' },
           ]
         },
         {
           text: '基础',
           items: [
             { text: 'composition api', link: '/vue3/index2.md' },
-            { text: 'life cycle', link: '/vue3/index3.md' },
+            { text: 'life cycle hook', link: '/vue3/index3.md' },
             { text: 'setup', link: '/vue3/index4.md' },
             { text: 'reactive', link: '/vue3/index5.md' },
             { text: 'ref', link: '/vue3/vue-6.md' },
