@@ -1,11 +1,3 @@
-/*
- * @Author: along
- * @Description: 配置中心
- * @Date: 2023-05-26 14:47:28
- * @LastEditors: along
- * @LastEditTime: 2023-08-23 11:28:01
- * @FilePath: /cxy-web-box/docs/.vitepress/config.js
- */
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
@@ -102,7 +94,7 @@ export default defineConfig({
       // {
       //   text: '友链',
       //   items: [
-      //     { text: '祥祥的前端之旅', link: 'http://www.zxxweb.top' }
+      //     { text: '祥祥的前端之旅', link: 'http://www.alongweb.top' }
       //   ]
       // }
     ],
@@ -455,7 +447,7 @@ export default defineConfig({
         {
           text: '修仙界',
           items: [
-            { text: '小道消息', link: '/vue3/' },
+            { text: '仙界秘闻', link: '/vue3/' },
             { text: '功法秘籍', link: '/vue3/index1.md' },
           ]
         },
@@ -500,18 +492,22 @@ export default defineConfig({
         },
         {
           text: '元婴期',
-          items: []
+          items: [
+            { text: 'provide inject', link: '/vue3/index31.md' },
+            { text: 'script setup', link: '/vue3/index32.md' },
+            { text: 'typescript 工具类型', link: '/vue3/index32.md' },
+          ]
         },
         {
           text: '渡劫期',
           items: [
-
+            { text: 'Shared Composable', link: '/vue3/index30.md' },
           ]
         },
         {
           text: '至尊无敌',
           items: [
-            // { text: '2.x与3.x的变化', link: '/vue3/vue-12.md' },
+            { text: 'v3 source code', link: '/vue3/index40.md' },
           ]
         },
       ],
