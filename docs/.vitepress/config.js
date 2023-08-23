@@ -3,7 +3,7 @@
  * @Description: 配置中心
  * @Date: 2023-05-26 14:47:28
  * @LastEditors: along
- * @LastEditTime: 2023-08-22 18:11:18
+ * @LastEditTime: 2023-08-23 11:28:01
  * @FilePath: /cxy-web-box/docs/.vitepress/config.js
  */
 import { defineConfig } from 'vitepress'
@@ -453,14 +453,14 @@ export default defineConfig({
       ],
       '/vue3/': [
         {
-          text: '学习资源',
+          text: '修仙界',
           items: [
-            { text: '资讯', link: '/vue3/' },
-            { text: '文档', link: '/vue3/index1.md' },
+            { text: '小道消息', link: '/vue3/' },
+            { text: '功法秘籍', link: '/vue3/index1.md' },
           ]
         },
         {
-          text: '基础',
+          text: '练气期',
           items: [
             // { text: 'composition Api', link: '/vue3/index2.md' },
             { text: 'lifecycle hooks', link: '/vue3/index3.md' },
@@ -471,28 +471,45 @@ export default defineConfig({
             { text: 'readonly()', link: '/vue3/index8.md' },
             { text: 'watchEffect()', link: '/vue3/index9.md' },
             { text: 'watch()', link: '/vue3/index10.md' },
-            { text: '响应式功能函数', link: '/vue3/index11.md' },
-            { text: '手写响应式功能函数', link: '/vue3/index12.md' },
+            { text: 'isRef()', link: '/vue3/index11.md' },
+            { text: 'unRef()', link: '/vue3/index23.md' },
+            { text: 'toRef()', link: '/vue3/index24.md' },
+            { text: 'toRefs()', link: '/vue3/index25.md' },
+            { text: 'toValue()', link: '/vue3/index26.md' },
+            { text: 'isProxy()', link: '/vue3/index27.md' },
+            { text: 'isReactive()', link: '/vue3/index28.md' },
+            { text: 'isReadonly()', link: '/vue3/index29.md' },
           ]
         },
         {
-          text: '进阶',
+          text: '金丹期',
           items: [
+            { text: 'shallowRef', link: '/vue3/index12.md' },
+            { text: 'triggerRef', link: '/vue3/index13.md' },
+            { text: 'customRef', link: '/vue3/index14.md' },
+            { text: 'shallowReactive', link: '/vue3/index15.md' },
+            { text: 'shallowReadonly', link: '/vue3/index16.md' },
+            { text: 'toRaw', link: '/vue3/index17.md' },
+            { text: 'markRaw', link: '/vue3/index18.md' },
+            { text: 'effectScope', link: '/vue3/index19.md' },
+            { text: 'getCurrentScope', link: '/vue3/index20.md' },
+            { text: 'onScopeDispose', link: '/vue3/index21.md' },
+            { text: 'utils source code', link: '/vue3/index22.md' },
             // { text: 'vue-property-decorator', link: '/vue3/vue-100.md' },
           ]
         },
         {
-          text: '实战',
+          text: '元婴期',
           items: []
         },
         {
-          text: '插件',
+          text: '渡劫期',
           items: [
 
           ]
         },
         {
-          text: '闲聊',
+          text: '至尊无敌',
           items: [
             // { text: '2.x与3.x的变化', link: '/vue3/vue-12.md' },
           ]

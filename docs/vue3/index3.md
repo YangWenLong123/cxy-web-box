@@ -11,6 +11,19 @@ beforeDestroy -> onBeforeUnmount
 destroyed -> onUnmounted
 errorCaptured -> onErrorCaptured
 ```
+源码查看
+
+```js
+export const onBeforeMount = createLifeCycle('beforeMount')
+export const onMounted = createLifeCycle('mounted')
+export const onBeforeUpdate = createLifeCycle('beforeUpdate')
+export const onUpdated = createLifeCycle('updated')
+export const onBeforeUnmount = createLifeCycle('beforeDestroy')
+export const onUnmounted = createLifeCycle('destroyed')
+export const onActivated = createLifeCycle('activated')
+export const onDeactivated = createLifeCycle('deactivated')
+export const onServerPrefetch = createLifeCycle('serverPrefetch')
+```
 
 ## 生命周期函数，可以按需导入到组件中，且只能在setup()函数中使用
 
