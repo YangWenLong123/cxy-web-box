@@ -447,7 +447,8 @@ export default defineConfig({
         {
           text: '修仙界',
           items: [
-            { text: '仙界秘闻', link: '/vue3/' },
+            { text: '进入仙界', link: '/vue3/' },
+            { text: '仙界秘闻', link: '/vue3/index39.md' },
             { text: '功法秘籍', link: '/vue3/index1.md' },
           ]
         },
@@ -487,27 +488,51 @@ export default defineConfig({
             { text: 'getCurrentScope', link: '/vue3/index20.md' },
             { text: 'onScopeDispose', link: '/vue3/index21.md' },
             { text: 'utils source code', link: '/vue3/index22.md' },
-            // { text: 'vue-property-decorator', link: '/vue3/vue-100.md' },
           ]
         },
         {
           text: '元婴期',
           items: [
             { text: 'provide inject', link: '/vue3/index31.md' },
-            { text: 'script setup', link: '/vue3/index32.md' },
-            { text: 'typescript 工具类型', link: '/vue3/index32.md' },
+            { text: 'version', link: '/vue3/index32.md' },
+            { text: 'nextTick()', link: '/vue3/index33.md' },
+            { text: 'defineComponent()', link: '/vue3/index34.md' },
+            { text: 'defineAsyncComponent()', link: '/vue3/index35.md' },
+            { text: 'defineCustomElement()', link: '/vue3/index36.md' },
+            { text: 'script setup', link: '/vue3/index37.md' },
+            { text: 'typescript 工具类型', link: '/vue3/index38.md' },
+          ]
+        },
+        {
+          text: '大乘期',
+          items: [
+            { text: 'Teleport', link: '/vue3/index41.md' },
+            { text: 'Suspense', link: '/vue3/index42.md' },
+            { text: '3.3主要特性', link: '/vue3/index43.md' },
+            { text: 'vue-property-decorator', link: '/vue3/index44.md' },
+            { text: 'composition', link: '/vue3/index45.md' },
+            { text: 'Fragments', link: '/vue3/index46.md' },
           ]
         },
         {
           text: '渡劫期',
           items: [
-            { text: 'Shared Composable', link: '/vue3/index30.md' },
+            { text: 'pinia', link: '/vue3/index50.md' },
+            { text: 'pinia-plugin-persistedstate', link: '/vue3/index51.md' },
+            { text: 'router', link: '/vue3/index52.md' },
+            { text: 'env', link: '/vue3/index53.md' },
+            { text: 'unplugin-auto-import/vite', link: '/vue3/index54.md' },
+            { text: 'vite-plugin-inspect', link: '/vue3/index55.md' },
+            { text: 'vueuse', link: '/vue3/index56.md' },
+            { text: 'vite.config', link: '/vue3/index56.md' },
           ]
         },
         {
           text: '至尊无敌',
           items: [
+            { text: 'Shared Composable', link: '/vue3/index30.md' },
             { text: 'v3 source code', link: '/vue3/index40.md' },
+            { text: '从vue2迁移', link: '/vue3/index70.md' },
           ]
         },
       ],

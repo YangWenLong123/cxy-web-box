@@ -1,40 +1,51 @@
+## 介绍
+
+Vue.js（读音 /vjuː/, 类似于 view）是一套构建用户界面的JavaScript框架。Vue.js的目标是通过尽可能简单的API实现响应的数据绑定和组合的视图组件。Vue.js自底向上逐层应用，使得开发者可以作为库去实现一些功能，也可以作为框架构建大型应用。
+
+Vue3是Vue.js的最新版本，它带来了许多新特性和优化，包括更好的性能、更小的包大小、更好的TypeScript支持、新的组合式API等。
+
+Vue3是Vue.js的最新版本，它带来了许多新特性和优化，包括更好的性能、更小的包大小、更好的TypeScript支持、新的组合式API等。
+
+## 项目创建
+
+已安装 16.0 或更高版本的 [Node.js](https://nodejs.org/en)
+
+```bash
+npm create vue@latest
+```
+
+这一指令将会安装并执行 [create-vue](https://github.com/vuejs/create-vue)，它是 Vue 官方的项目脚手架工具。你将会看到一些诸如 TypeScript 和测试支持之类的可选功能提示：
+
+```bash
+✔ Project name: … <your-project-name>
+✔ Add TypeScript? … No / Yes
+✔ Add JSX Support? … No / Yes
+✔ Add Vue Router for Single Page Application development? … No / Yes
+✔ Add Pinia for state management? … No / Yes
+✔ Add Vitest for Unit testing? … No / Yes
+✔ Add an End-to-End Testing Solution? … No / Cypress / Playwright
+✔ Add ESLint for code quality? … No / Yes
+✔ Add Prettier for code formatting? … No / Yes
+
+Scaffolding project in ./<your-project-name>...
+Done.
+```
+
+如果不确定是否要开启某个功能，你可以直接按下回车键选择 No。在项目被创建后，通过以下步骤安装依赖并启动开发服务器：
+
+```bash
+cd your-project-name
+npm install
+npm run dev
+```
+
+现在应该已经运行起来了你的第一个 Vue 项目！请注意，生成的项目中的示例组件使用的是[组合式 API](https://cn.vuejs.org/guide/introduction.html#api-styles) 和 script setup，而[非选项式 API](https://cn.vuejs.org/guide/introduction.html#api-styles)。下面是一些补充提示：
+
+推荐的 IDE 配置是 [Visual Studio Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) 扩展。如果使用其他编辑器，参考 [IDE 支持章节](https://cn.vuejs.org/guide/scaling-up/tooling.html#ide-support)。
 
 
-## 资讯
+当你准备将应用发布到生产环境时，请运行：
 
-Vue 2 将于 2023 年 12 月 31 日停止维护。详见 [Vue 2 延长 LTS](https://v2.vuejs.org/lts/)
-
-Vue3版本更新记录。详见[CHANGELOG.MD](https://github.com/vuejs/core/blob/main/CHANGELOG.md)
-
-Vue3 Composition API如何替换Vue Mixins。[pdf](https://www.yuque.com/attachments/yuque/0/2020/pdf/636979/1594884858405-b9052caa-bd82-4a89-ae75-c9a47f86094f.pdf)
-
-Vue博客，[详见](https://blog.vuejs.org/)
-
-## Vue 2 和 Vue 3 之间的区别是什么？
-
-Vue 3 是 Vue 当前的最新主版本。它包含了一些 Vue 2 中没有的新特性 (比如 Teleport、Suspense，以及多根元素模板)。同时它也包含了一些与 Vue 2 非兼容性的变更。细节文档请参考 [Vue 3 迁移指南](https://v3-migration.vuejs.org/zh/)。
-
-尽管存在差异，但大多数 Vue API 在两个大版本之间是共享的，所以你的大部分 Vue 2 知识将继续在 Vue 3 中发挥作用。需要注意的是，组合式 API 原本是一个 Vue 3 独有的特性，但目前已兼容至 Vue 2 且在[ Vue 2.7](https://github.com/vuejs/vue/blob/main/CHANGELOG.md#270-2022-07-01) 中可用。
-
-总的来说，Vue 3 提供了更小的包体积、更好的性能、更好的可扩展性和更好的 TypeScript/IDE 支持。如果你现在要开始一个新项目，我们推荐你选择 Vue 3。但也仍然存在一些考虑使用 Vue 2 的理由：
-
-你需要支持 IE11。Vue 3 用到了一些 IE11 不支持的现代 JavaScript 特性。
-如果你打算将现有的 Vue 2 应用迁移到 Vue 3，请查阅迁移指南。
-
-## Vue 支持哪些浏览器？​
-最新版本的 Vue (3.x) 只支持原生支持 [ES2015 的浏览器](https://caniuse.com/es6)。这并不包括 IE11。Vue 3.x 使用的 ES2015 功能无法在旧版本的浏览器中进行兼容，如果你需要支持旧版本的浏览器，请使用 Vue 2.x 替代。
-
-
-
-## 文章
-
-焕然一新的 Vue 3 中文文档要来了🎉 , [详见](https://juejin.cn/post/7077701166397653028)
-
-Vue3源码学习, [详见](https://vue3js.cn/start/)
-
-
-## Vue3模版编译在线体验
-
-<https://vue-next-template-explorer.netlify.app/>
-
-
+```bash
+npm run build
+```

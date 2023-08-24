@@ -6,7 +6,7 @@
   "author": "along",
   "license": "MIT",
   "scripts": {
-    "docs:dev": "vitepress dev docs --port 8889 --open",
+    "docs:dev": "vitepress dev docs --port 8889",
     "docs:build": "vitepress build docs",
     "docs:serve": "vitepress serve docs --port 8082"
   },

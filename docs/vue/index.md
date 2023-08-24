@@ -12,6 +12,12 @@
 -   cd name
 -   npm start
 
+## ui界面创建
+
+```bash
+vue ui
+```
+
 
 ## 3.x创建
 
