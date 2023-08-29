@@ -81,3 +81,38 @@ vue2.6中对slot进行改版，但是仍然对scopedSlots兼容,vue3正式弃用
 $on,$off,$once不再使用.
 
 12.不能再使用 | filter，可以使用计算属性替换
+
+
+## 2.6.10 升级 2.7
+
+Vue 2.7 是 Vue 2 最新的次级版本。其提供了内置的组合式 API 支持。
+
+`Vue CLI / webpack`
+
+1. 将本地的 `@vue/cli-xxx` 依赖升级至所在主版本范围内的最新版本 (如有)：
+
+    - v4 升级至 `~4.5.18`
+    - v5 升级至 `~5.0.6`
+
+2. 将 `vue` 升级至 `^2.7.0`。同时你可以从依赖中移除 `vue-template-compiler` ——它在 2.7 中已经不再需要了。
+    - 注意：如果你在使用 @vue/test-utils，那么 vue-template-compiler 需要保留，因为该测试工具集依赖了一些只有这个包会暴露的 API。
+
+3. 检查包管理工具的版本锁定文件，以确保以下依赖的版本符合要求。它们可能是间接依赖所以未必罗列在了 package.json 中。
+    - vue-loader: ^15.10.0
+    - vue-demi: ^0.13.1
+
+      否则，你需要移除整个 node_modules 和版本锁定文件，然后重新安装，以确保它们都升到了最新版本。
+4. 如果你曾经使用了 `@vue/composition-api`，将其导入语句切换至 `vue` 即可。注意有些之前通过插件暴露的 API，例如 `createApp`，并没有被移植回 2.7。
+
+5. 如果你在 `script setup` 中遇到了未使用变量的 `lint` 错误，请更新 `eslint-plugin-vue` 至最新版本 (9+)。
+
+6. 2.7 的单文件组件编译器使用了 PostCSS 8 (从 7 升级而来)。PostCSS 8 应该向下兼容了绝大多数插件，但是该升级可能在你使用了一些只支持 PostCSS 7 的自定义插件时遇到问题。这种情况下，你需要升级相应的插件至其兼容 PostCSS 8 的版本。
+
+7. [@vue/compiler-sfc] the >>> and /deep/ combinators have been deprecated. Use :deep() instead. 
+
+        这个错误是因为 Vue 2.7.0 不再支持 >>> 和 /deep/ 这两个深度选择器，而推荐使用 :deep() 选择器。
+
+        你可以通过以下步骤来解决这个问题：
+
+        1. 打开你的代码编辑器，找到使用 >>> 或 /deep/ 的地方。
+        2. 将 >>> 或 /deep/ 替换为 :deep()。

@@ -121,9 +121,19 @@ watch() 默认是懒侦听的，即仅在侦听源发生变化时才执行回调
       //  传入多个对象，newValue和oldValue是对应的value值
       const name = ref('张三')
       const age = ref(18)
+
+      // 深度监听
       watch([name,age], ([newName,newAge],[oldName,oldAge]) => {
         console.log('new:',newName,newAge,'old',oldName,oldAge);
-      })
+      }, {
+        deep: true
+      })
+
+      // getter形式
+      watch(() => [name,age], ([newName, newAge], [oldName, oldAge]) => {
+        // TODO
+      })
+
      const changeInfo = ()=>{
        name.value += "1"
        age.value += 1

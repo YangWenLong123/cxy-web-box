@@ -21,3 +21,6 @@
   - [debug](https://github.com/vuejs/vue/blob/main/src/v3/debug.ts)
   - [h](https://github.com/vuejs/vue/blob/main/src/v3/h.ts)
   - [index](https://github.com/vuejs/vue/blob/main/src/v3/index.ts)
+- rutime-core
+  - [src/index.ts](https://github.com/vuejs/core/blob/main/packages/runtime-core/src/index.ts#L131)
+  
