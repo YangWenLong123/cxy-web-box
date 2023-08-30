@@ -47,11 +47,15 @@ console.log('props-ts:\n', props)
 
 3、T[] 可以根据传入的类型做出对应的提示
 
+```
 传入 {name: string}
+```
 
 ![Alt text](image-13.png)
 
+```
 传入 {name: string, age: number}
+```
 
 ![Alt text](image-14.png)
 
@@ -62,11 +66,11 @@ console.log('props-ts:\n', props)
 对比一下，我们可以发现，使用泛型可以准确的推断类型，在模板里面可以有更准确的提示，如果类型不合格，可以有提示信息。
 这样在编写代码的时候可以避免低级错误。
 
-
-```
 此功能在最新版本的volar/vue-tsc中默认启用。
 
-# 在 SFC（单文件组件）中导入外部 TS 类型
+
+## 在 SFC（单文件组件）中导入外部 TS 类型
+
 
 1、 在接收父亲组件接收的参数时，我们一般使用defineProps，原来接收的方式:
 
@@ -144,7 +148,7 @@ vue3.3对defineProps的改进 新增反省支持需要在script标签加上gener
 ![Alt text](image-10.png)
 
 
-6. 使用的组件`script setup`支持范型和继承
+6、 使用的组件`script setup`支持范型和继承
 
 ```ts
 <script setup lang="ts" generic="T">
@@ -153,7 +157,6 @@ defineProps<{
   selected: T
 }>()
 </script>
-
 ```
 
 ```ts
@@ -164,8 +167,48 @@ defineProps<{
   list: U[]
 }>()
 </script>
+```
 
-# defineSlots 来定义插槽的类型
+7、defineProps使用引入外部定义的接口
+
+父组件
+```ts
+// App.vue
+<script setup lang='ts'>
+// 定义接口并暴露出去
+export interface Command {
+  msg: string
+}
+const count = ref(0)
+</script>
+
+<template>
+  <button @click="count ++">change count</button>
+  <Child :msg="'hello vue3.3'" :count="count" />
+</template>
+
+```
+
+子组件
+```ts
+// Child.vue
+<script setup lang='ts'>
+import { Command } from '../App.vue';
+defineProps<Command & { count: number}>()
+</script>
+
+<template>
+  <h1>{{ msg }}</h1>
+  <div>{{ count }}</div>
+</template>
+
+```
+
+效果如下
+
+![Alt text](image-16.png)
+
+## defineSlots 来定义插槽的类型
 
 1、父组件
 ```ts
@@ -217,45 +260,6 @@ defineSlots<{
 
 ```
 
-
-7、defineProps使用引入外部定义的接口
-
-父组件
-```ts
-// App.vue
-<script setup lang='ts'>
-// 定义接口并暴露出去
-export interface Command {
-  msg: string
-}
-const count = ref(0)
-</script>
-
-<template>
-  <button @click="count ++">change count</button>
-  <Child :msg="'hello vue3.3'" :count="count" />
-</template>
-
-```
-
-子组件
-```ts
-// Child.vue
-<script setup lang='ts'>
-import { Command } from '../App.vue';
-defineProps<Command & { count: number}>()
-</script>
-
-<template>
-  <h1>{{ msg }}</h1>
-  <div>{{ count }}</div>
-</template>
-
-```
-
-效果如下
-
-![Alt text](image-16.png)
 
 
 2、案例
@@ -350,7 +354,7 @@ UI库里的 table 组件一般都会支持这样的插槽，以便于灵活设�
 
 这里的 default 就是一个匿名作用域插槽，可以通过scope.row获得每一行的数据。
 
-# defineEmits 更便捷的语法
+## defineEmits 更便捷的语法
 
 1、父组件
 
@@ -481,7 +485,7 @@ console.log(modelValue.value)
 
 ```
 
-`案例`
+案例
 
 我们使用defineModel定义一个model，绑定在input标签上，同时使用watch监听变化。
 
@@ -511,7 +515,6 @@ const modelValue = defineModel<string>()
 watch(() => modelValue.value, (val) => console.log(val))
 </script>
 ```
-
 效果如下
 
 ![Alt text](image-17.png)
