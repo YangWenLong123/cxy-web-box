@@ -577,6 +577,10 @@ export default defineConfig({
             { text: ".postcss.config.js", link: "/structure/structure-28.md" },
             { text: ".prettierrc", link: "/structure/structure-29.md" },
             { text: "commitlint.config", link: "/structure/structure-30.md" },
+            {
+              text: "husky7 + commitlint + lint-staged 配置",
+              link: "/structure/structure-37.md",
+            },
           ],
         },
         {
