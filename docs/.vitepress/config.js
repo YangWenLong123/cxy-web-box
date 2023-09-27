@@ -830,6 +830,7 @@ export default defineConfig({
             { text: "gzip压缩配置", link: "/http/http20.md" },
             { text: "路由刷新404配置", link: "/http/http21.md" },
             { text: "二级目录配置", link: "/http/http23.md" },
+            { text: "Nginx", link: "/http/http24.md" },
           ],
         },
       ],
@@ -878,6 +879,16 @@ export default defineConfig({
         {
           text: "APP开发",
           items: [{ text: "前言", link: "/project/project-21.md" }],
+        },
+      ],
+
+      "/book/": [
+        {
+          text: "每周一文",
+          items: [
+            { text: "前言", link: "/book/.md" },
+            { text: "《页面截图方案》", link: "/book/book1.md" },
+          ],
         },
       ],
     },

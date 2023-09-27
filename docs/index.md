@@ -5,17 +5,17 @@ title: 程序员盒子(Web Box)
 date: "2023-05-08"
 titleTemplate: 一个网站、提供一揽子的服务
 keywords:
-      - 程序员盒子
-      - Web Box
-      - web box
-      - 一个网站、提供一揽子的服务
-      - along
-      - 前端笔记
+  - 程序员盒子
+  - Web Box
+  - web box
+  - 一个网站、提供一揽子的服务
+  - along
+  - 前端笔记
 author: along
 description: "程序员盒子(Web Box), 一个网站、提供一揽子的服务"
 
 hero:
-  name:  程序员盒子(Web Box)
+  name: 程序员盒子(Web Box)
   # text: 一个网站、提供一揽子的服务
   tagline: 一个网站、提供一揽子的服务
   # actions:
@@ -81,5 +81,8 @@ features:
   - title: "手把手教你写一个企业级项目"
     details: "带你从0到1完成一个企业级项目"
     link: /project/
+  - title: "每周一文"
+    details: "每周一文，坚持学习"
+    link: /book/
 # https://github.dev/process1024/vitepress
 ---
