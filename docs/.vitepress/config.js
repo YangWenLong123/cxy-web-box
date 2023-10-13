@@ -887,7 +887,8 @@ export default defineConfig({
           text: "每周一文",
           items: [
             { text: "前言", link: "/book/.md" },
-            { text: "《页面截图方案》", link: "/book/book1.md" },
+            { text: "前端截图的几种方案方案", link: "/book/book1.md" },
+            { text: "Electron开发跨平台应用", link: "/book/book2.md" },
           ],
         },
       ],
