@@ -100,8 +100,8 @@ pnpm create @quick-start/electron my-app --template vue
 
 当运行 electron-vite 时，它会自动寻找主进程、渲染器和预加载脚本的入口文件。默认的入口配置：
 
-- 主进程： /src/main/{index|main}.{js|ts|mjs|cjs}
-- 预加载脚本： /src/preload/{index|preload}.{js|ts|mjs|cjs}
+- 主进程： /src/main/index|main. js|ts|mjs|cjs
+- 预加载脚本： /src/preload/index|preload.js|ts|mjs|cjs
 - 渲染器： /src/renderer/index.html
 
 如果找不到入口点，它将抛出一个错误。你可以通过设置 build.rollupOptions.input 选项来修复它。
