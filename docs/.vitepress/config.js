@@ -55,41 +55,59 @@ export default defineConfig({
         rel: "sponsored",
       },
       {
-        text: "图片",
+        text: "图片上传",
         link: "http://xyz.alongweb.top/upload",
         target: "_self",
         rel: "sponsored",
       },
+      // {
+      //   text: "小册",
+      //   link: "http://xyz.alongweb.top/book",
+      //   target: "_self",
+      //   rel: "sponsored",
+      // },
       {
-        text: "小册",
-        link: "http://xyz.alongweb.top/book",
+        text: "开放API",
+        link: "http://xyz.alongweb.top/swagger",
         target: "_self",
         rel: "sponsored",
       },
       {
-        text: "随笔",
-        link: "/notes/",
+        text: "懒饭",
+        link: "http://food.alongweb.top",
+        target: "_self",
+        rel: "sponsored",
       },
       {
-        text: "摸鱼",
-        link: "/lazy/",
+        text: "截图",
+        link: "http://xyz.alongweb.top/screenshot",
+        target: "_self",
+        rel: "sponsored",
       },
-      {
-        text: "指南",
-        link: "/guide/",
-      },
-      {
-        text: "关于我",
-        link: "/introduce/",
-      },
-      {
-        text: "赞助",
-        link: "/sponsor/",
-      },
-      {
-        text: "插件",
-        link: "https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd?hl=zh-CN",
-      },
+      // {
+      //   text: "随笔",
+      //   link: "/notes/",
+      // },
+      // {
+      //   text: "摸鱼",
+      //   link: "/lazy/",
+      // },
+      // {
+      //   text: "指南",
+      //   link: "/guide/",
+      // },
+      // {
+      //   text: "关于我",
+      //   link: "/introduce/",
+      // },
+      // {
+      //   text: "赞助",
+      //   link: "/sponsor/",
+      // },
+      // {
+      //   text: "插件",
+      //   link: "https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd?hl=zh-CN",
+      // },
       // {
       //   text: '友链',
       //   items: [
