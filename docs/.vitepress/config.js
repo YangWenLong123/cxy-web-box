@@ -85,6 +85,12 @@ export default defineConfig({
         rel: "sponsored",
       },
       // {
+      //   text: "后台管理模版",
+      //   link: "http://admin.alongweb.top",
+      //   target: "_self",
+      //   rel: "sponsored",
+      // },
+      // {
       //   text: "随笔",
       //   link: "/notes/",
       // },
@@ -738,6 +744,20 @@ export default defineConfig({
           items: [],
         },
       ],
+      "/electron/": [
+        {
+          text: "基础",
+          items: [],
+        },
+        {
+          text: "进阶",
+          items: [],
+        },
+        {
+          text: "实战",
+          items: [],
+        },
+      ],
       "/linux/": [
         {
           text: "Linux手册",
@@ -907,6 +927,15 @@ export default defineConfig({
             { text: "前言", link: "/book/.md" },
             { text: "前端截图的几种方案方案", link: "/book/book1.md" },
             { text: "Electron开发跨平台应用", link: "/book/book2.md" },
+          ],
+        },
+      ],
+      "/plug/": [
+        {
+          text: "vue插件收藏",
+          items: [
+            { text: "拖拽插件", link: "/index/.md" },
+            { text: "图片预览", link: "/index1/.md" },
           ],
         },
       ],

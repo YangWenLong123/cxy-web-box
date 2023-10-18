@@ -72,6 +72,9 @@ features:
   - title: "小程序"
     details: "小程序开发流程"
     link: /wx/
+  - title: "electron-vite"
+    details: "electron-vite 是一个新型构建工具，旨在为 Electron 提供更快、更精简的开发体验"
+    link: /electron/
   - title: "Linux手册"
     details: "Linux的常用指令"
     link: /linux/
@@ -84,5 +87,8 @@ features:
   - title: "每周一文"
     details: "每周一文，坚持学习"
     link: /book/
+  - title: "插件"
+    details: "常用插件收藏"
+    link: /plug/
 # https://github.dev/process1024/vitepress
 ---
