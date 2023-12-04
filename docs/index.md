@@ -81,14 +81,14 @@ features:
   - title: "http"
     details: "HTTP是一种用于传输数据的协议，它可以控制缓存和认证，开放同源限制等"
     link: /http/
-  - title: "手把手教你写一个企业级项目"
-    details: "带你从0到1完成一个企业级项目"
-    link: /project/
+  # - title: "手把手教你写一个企业级项目"
+  #   details: "带你从0到1完成一个企业级项目"
+  #   link: /project/
   - title: "每周一文"
     details: "每周一文，坚持学习"
     link: /book/
-  - title: "插件"
-    details: "常用插件收藏"
-    link: /plug/
+  # - title: "插件"
+  #   details: "常用插件收藏"
+  #   link: /plug/
 # https://github.dev/process1024/vitepress
 ---
