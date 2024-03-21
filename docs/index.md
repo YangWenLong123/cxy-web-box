@@ -84,11 +84,14 @@ features:
   # - title: "手把手教你写一个企业级项目"
   #   details: "带你从0到1完成一个企业级项目"
   #   link: /project/
-  - title: "每周一文"
+  - title: "技术文章"
     details: "每周一文，坚持学习"
     link: /book/
   # - title: "插件"
   #   details: "常用插件收藏"
   #   link: /plug/
+  - title: "面试宝典"
+    details: "面试宝典"
+    link: /interview/
 # https://github.dev/process1024/vitepress
 ---

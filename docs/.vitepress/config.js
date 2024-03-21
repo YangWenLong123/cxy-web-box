@@ -928,6 +928,7 @@ export default defineConfig({
             { text: "前端截图的几种方案方案", link: "/book/book1.md" },
             { text: "Electron开发跨平台应用", link: "/book/book2.md" },
             { text: "前端项目如何接入扫码枪", link: "/book/book3.md" },
+            { text: "Web版Excel制作过程", link: "/book/book4.md" },
           ],
         },
       ],
@@ -937,6 +938,15 @@ export default defineConfig({
           items: [
             { text: "拖拽插件", link: "/index/.md" },
             { text: "图片预览", link: "/index1/.md" },
+          ],
+        },
+      ],
+      "/interview/": [
+        {
+          text: "面试宝典",
+          items: [
+            { text: "html", link: "/interview/.md" },
+            { text: "css", link: "/interview/index1.md" },
           ],
         },
       ],
