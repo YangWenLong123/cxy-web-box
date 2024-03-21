@@ -74,7 +74,7 @@ export default defineConfig({
       },
       {
         text: "懒饭",
-        link: "http://food.alongweb.top",
+        link: "http://food.alongweb.top/preview",
         target: "_self",
         rel: "sponsored",
       },
@@ -200,7 +200,6 @@ export default defineConfig({
             { text: "回流重绘", link: "/js/js-31.md" },
             { text: "异步并行与串行", link: "/js/js-37.md" },
             { text: "代码并发控制", link: "/js/js-38.md" },
-            { text: "强缓存与协商缓存", link: "/js/js-49.md" },
             { text: "函数式编程", link: "/js/js-51.md" },
             { text: "数据埋点", link: "/js/js-53.md" },
           ],
