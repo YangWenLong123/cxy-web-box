@@ -1,27 +1,27 @@
-#### Git介绍
+#### Git 介绍
 
--   Git 是一个用于控制管理代码历史版本的工具，区别于集中式的 SVN，Git 使用了分布式的管理方式。
--   团队每人都拥有一个自己的本地仓库，不仅可以自己本地进行版本管理，也可以将代码版本在各个成员间共享。
+- Git 是一个用于控制管理代码历史版本的工具，区别于集中式的 SVN，Git 使用了分布式的管理方式。
+- 团队每人都拥有一个自己的本地仓库，不仅可以自己本地进行版本管理，也可以将代码版本在各个成员间共享。
 
 #### ![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/151ae71dc4a846b89a73407d539b91e9~tplv-k3u1fbpfcp-zoom-1.image)
 
 #### GitHub Desktop
 
-GitHub Desktop -- 是Git官方出品的可视化工具，方便操作，通俗易懂,[官网下载入口](https://desktop.github.com/)
+GitHub Desktop -- 是 Git 官方出品的可视化工具，方便操作，通俗易懂,[官网下载入口](https://desktop.github.com/)
 
 ![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/1f35820e5ec841f1b651f0cb93126265~tplv-k3u1fbpfcp-zoom-1.image)
 
-#### 初始化一个Git仓库
+#### 初始化一个 Git 仓库
 
 ```js
 git init
 Initialized empty Git repository in /path/to/work/directory/.git/
 ```
 
--   这样你就可以得到一个本地仓库了，你会看到工作目录下已经新增了一个  *.git* 目录。
--   *注：某些系统中可能预设隐藏以 . 开头的文件夹，可能需要开启相关设置才能看到*
+- 这样你就可以得到一个本地仓库了，你会看到工作目录下已经新增了一个   _.git_ 目录。
+- _注：某些系统中可能预设隐藏以 . 开头的文件夹，可能需要开启相关设置才能看到_
 
-**
+\*\*
 
 #### 查看与设置用户名和邮箱
 
@@ -211,6 +211,14 @@ Date:   Fri Jul 17 16:57:21 2020 +0800
 git reset --hard b27f56adaaa05a50d68a2072b60e7469dcb4521c	//可以通过git log查看
 ```
 
+#### 代码回滚后推送仓库
+
+```js
+git push --force-with-lease origin feature-branch
+
+是一个更安全的强制推送选项，它在执行强制推送之前会检查远程分支是否已经被其他人更新。如果远程分支已经被更新，--force-with-lease将拒绝执行强制推送，以防止覆盖其他人的工作。这是一个避免误操作覆盖他人更改的有效方法
+```
+
 #### 常见问题
 
 ```
@@ -226,19 +234,21 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 原因：你的远程仓库的分支比本地的代码要新所以有冲突。
 
 解决：
+
 ```js
 git push -u origin master -f （多人开发需谨慎）
 ```
 
 A lock file already exists in the repository, which blocks this operation from completing
 
-解决： 在文件的.git文件中 有个index.lock文件。把它删除掉就行了
+解决： 在文件的.git 文件中 有个 index.lock 文件。把它删除掉就行了
 
-.gitignore文件不生效
+.gitignore 文件不生效
 
 原因：第一次提交代码没有添加这个文件
 
 解决：
+
 ```js
 git rm -r --cached .
 
@@ -247,7 +257,7 @@ git add .
 git commit -m 'update .gitignore'
 ```
 
-#### stash changes的用法
+#### stash changes 的用法
 
 restore
 
@@ -259,8 +269,8 @@ discard
 
 #### 文章
 
-git revert回滚操作：<https://www.jianshu.com/p/5e7ee87241e4>
+git revert 回滚操作：<https://www.jianshu.com/p/5e7ee87241e4>
 
-git异常处理清单: <https://juejin.im/post/5edcf3a36fb9a047fa04fbc3>
+git 异常处理清单: <https://juejin.im/post/5edcf3a36fb9a047fa04fbc3>
 
-git命令：<https://www.coderutil.com/article?id=120>
+git 命令：<https://www.coderutil.com/article?id=120>
