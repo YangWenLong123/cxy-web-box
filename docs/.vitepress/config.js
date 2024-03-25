@@ -135,6 +135,8 @@ export default defineConfig({
             { text: "如何使用HTML的音频和视频标签", link: "/html/html-6.md" },
             { text: "HTML5中的地理定位API", link: "/html/html-7.md" },
             { text: "如何使用HTML5的拖放API", link: "/html/html-8.md" },
+            { text: "HTML元素", link: "/html/html-9.md" },
+            { text: "HTML全局属性", link: "/html/html-10.md" },
           ],
         },
       ],
