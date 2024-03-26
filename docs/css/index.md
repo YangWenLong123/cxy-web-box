@@ -1,3 +1,5 @@
+![alt text](image.png)
+
 ## 文本命名规范
 
 1.  index.css: 一般用于首页建立样式
@@ -46,7 +48,7 @@
 
 ## 功能命名
 
-1.  go: 标记网站logo标志
+1.  go: 标记网站 logo 标志
 1.  banner: 标语、广告条、顶部广告条
 1.  login: 登陆，（例如登录表单：form-login）
 1.  loginbar: 登录条

@@ -31,6 +31,10 @@ Nginx 处理请求的基本流程如下：
 
 1.  响应结果：Nginx 根据处理结果生成响应报文，包括状态码、头部信息和响应内容。然后将响应发送给客户端。
 
+## 核心配置
+
+找到 Nginx 安装目录下的 conf 目录下 nginx.conf 文件，Nginx 的基本功能配置是由它提供的。
+
 ## 什么是正向代理和反向代理
 
 ![Alt text](image-1.png)
@@ -45,11 +49,28 @@ Nginx 处理请求的基本流程如下：
 
 是指客户端发送请求到代理服务器，代理服务器再将请求转发给后端的多个服务器中的一个或多个，并将后端服务器的响应返回给客户端。客户端并不直接访问后端服务器，而是通过反向代理服务器来获取服务。反向代理可以实现负载均衡、高可用性和安全性等功能。它常用于网站的高并发访问、保护后端服务器、提供缓存和 SSL 终止等功能。
 
+```bash
+server {
+    listen       80;
+    server_name  localhost;
+
+
+    location / {
+         proxy_pass http://localhost:8081;
+         proxy_set_header Host $host:$server_port;#为请求头添加Host字段，用于指定请求服务器的域名/IP地址和端口号。
+
+
+         # 设置用户ip地址
+         proxy_set_header X-Forwarded-For $remote_addr;#为请求头添加XFF字段，值为客户端的IP地址。
+         # 当请求服务器出错去寻找其他服务器
+         proxy_next_upstream error timeout invalid_header http_500 http_502 http_503;
+```
+
+当我们访问 localhost 的时候，Nginx 就将我们的请求转到 localhost:8081 了
+
 ## nginx 启动和关闭
 
-```
-bash
-复制代码
+```bash
 进入目录：/usr/local/nginx/sbin
 启动命令：./nginx
 重启命令：nginx -s reload
@@ -60,9 +81,7 @@ bash
 
 ## 目录结构
 
-```
-csharp
-复制代码
+```bash
 [root@localhost ~]# tree /usr/local/nginx
 /usr/local/nginx
 
@@ -98,11 +117,19 @@ csharp
 └── uwsgi_temp                       # 临时目录
 ```
 
+## 配置文件结构
+
+- 全局块 配置和 Nginx 运行相关的全局配置
+- events 块 配置和网络链接相关的配置
+- http 块 配置代理、缓存、日志记录、虚拟主机等配置
+- server 块 配置虚拟主机的相关参数，一个 http 快中可以有多个 server 块
+- location 块 配置请求的路由，以及各种页面的处理情况
+
+![alt text](image-5.png)
+
 ## 配置文件 nginx.conf
 
-```
-ini
-复制代码
+```bash
 # 启动进程,通常设置成和cpu的数量相等
 worker_processes  1;
 
@@ -291,15 +318,24 @@ location 指令的作用就是根据用户请求的 URI 来执行不同的应用
 ### 语法
 
 ```
-css
-复制代码
-location [ = | ~ | ~* | ^~ ] uri {...}
+location [ = | ~ | ~* | !~ | !~* | @ | ^~ ] uri {...}
 ```
 
-- `[ = | ~ | ~* | ^~ ]`：匹配的标识
+- = 表示精确匹配，如果找到，立即停止搜索并立即处理此请求。
 
-  - `~`与`~*`的区别是：`~`区分大小写，`~*`不区分大小写
-  - `^~`：进行常规字符串匹配后，不做正则表达式的检查
+- ~ 表示执行一个正则匹配，区分大小写匹配
+
+- ~\* 表示执行一个正则匹配，不区分大小写匹配
+
+- !~ 区分大小写不匹配
+
+- !~\* 不区分大小写不匹配
+
+- ^~ 即表示只匹配普通字符（空格）。使用前缀匹配，^ 表示 “非”，即不查询正则表达式。如果匹配成功，则不再匹配其他 location。
+
+- @ 指定一个命名的 location，一般只用于内部重定向请求。例如 error_page, try_files
+
+- `^~`：进行常规字符串匹配后，不做正则表达式的检查
 
 - `uri`：匹配的网站地址
 
@@ -307,23 +343,29 @@ location [ = | ~ | ~* | ^~ ] uri {...}
 
 ### 举例
 
-```
-ini
-复制代码
-location = / {
-    [ configuration A ]
+```bash
+location = / {
+    # 精确匹配/，主机名后面不能带任何字符串 /
+    # 只匹配http://abc.com
+    # http://abc.com [匹配成功]
+    # http://abc.com/index [匹配失败]
 }
-location / {
-    [ configuration B ]
+location ^~ /img/ {
+      #以 /img/ 开头的请求，都会匹配上
+    #http://abc.com/img/a.jpg   [成功]
+    #http://abc.com/img/b.mp4  [成功]
+    }
+location ~* /Example/ {
+  # 则会忽略 uri 部分的大小写
+  #http://abc.com/test/Example/ [匹配成功]
+  #http://abc.com/example/ [匹配成功]
 }
-location /sk/ {
-    [ configuration C ]
+location /documents {
+    # 如果有正则表达式可以匹配，则优先匹配正则表达式。
+    #http://abc.com/documentsabc [匹配成功]
 }
-location ^~ /img/ {
-    [ configuration D ]
-}
-location ~* .(gif|jpg|jpeg)$ {
-    [ configuration E ]
+location / {
+    #http://abc.com/abc [匹配成功]
 }
 ```
 
@@ -335,9 +377,8 @@ location ~* .(gif|jpg|jpeg)$ {
 
 ## 单页面应用刷新 404 问题
 
-```
-bash
-复制代码
+```bash
+
     location / {
         try_files $uri $uri/ /index.html;
     }
@@ -345,9 +386,7 @@ bash
 
 ## 配置跨域请求
 
-```
-ini
-复制代码
+```ini
 server {
     listen   80;
     location / {
@@ -369,9 +408,7 @@ server {
 
 ## 开启 gzip 压缩
 
-```
-bash
-复制代码
+```bash
     # gzip模块设置
     gzip on;               #开启gzip压缩输出
     gzip_min_length 1k;    #最小压缩文件大小

@@ -2,7 +2,7 @@
 
 ![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/8bb62c451a034ddd91fac58b6d268efd~tplv-k3u1fbpfcp-zoom-1.image)
 
-``` css
+```css
 width: 0px;
 height: 0px;
 border-width: 50px;
@@ -12,8 +12,8 @@ border-color: aqua red saddlebrown dodgerblue;
 
 ## 多行省略
 
-``` css
-overflow : hidden;
+```css
+overflow: hidden;
 text-overflow: ellipsis;
 display: -webkit-box;
 -webkit-line-clamp: 3;
@@ -22,19 +22,20 @@ display: -webkit-box;
 
 ## 多媒体查询
 
-``` css
-@media  all and (min-width: 750px) and (max-width: 1000px) {}
+```css
+@media all and (min-width: 750px) and (max-width: 1000px) {
+}
 ```
 
-## @keyframes动画
+## @keyframes 动画
 
-``` css
+```css
 animation: al 5s infinite;
-@keyframes  al {
-from{
-}
-to{
-}
+@keyframes al {
+  from {
+  }
+  to {
+  }
 }
 ```
 
@@ -42,43 +43,44 @@ to{
 
 ![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/cf28e4f9bfdc4a22becfa218af142c23~tplv-k3u1fbpfcp-zoom-1.image)
 
-``` css
-.al_box{
-width: 100%;
-height: 200px;
-overflow: hidden;
-margin: o auto;
-display: flex;
+```css
+.al_box {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  margin: o auto;
+  display: flex;
 }
-.al_left, .al_right{
-width: 200px;
-height: 200px;
-background: darkcyan;
+.al_left,
+.al_right {
+  width: 200px;
+  height: 200px;
+  background: darkcyan;
 }
-.al_auto{
-flex: 1;
-height: 200px;
-background: darkgray;
+.al_auto {
+  flex: 1;
+  height: 200px;
+  background: darkgray;
 }
 ```
 
 ## calc 动态计算元素宽度
 
-``` css
+```css
 width: calc(100% - 200px);
 ```
 
 ## 数字字母换行
 
-``` css
+```css
 word-break: break-all;
 ```
 
-## css滤镜
+## css 滤镜
 
 [css3 filter(滤镜)](https://www.runoob.com/cssref/css3-pr-filter.html)
 
-``` css
+```css
 //在body上添加
 filter: grayscale(100%);
 -webkit-filter: grayscale(100%);
@@ -90,32 +92,34 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
 -webkit-filter: grayscale(1);
 ```
 
-## css禁止点击元素
+## css 禁止点击元素
 
-``` css
+```css
 pointer-events: none;
 ```
 
-## css画圆弧
+## css 画圆弧
 
-``` css
-<div class="container">
-	<div class="container-bg"></div>
-</div>
-
-.container {
+```css
+<div
+  class="container"
+  > <div
+  class="container-bg"
+  > </div
+  > </div
+  > .container {
   width: 750rpx;
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #F8F8F8;
+  background: #f8f8f8;
 }
 .container-bg {
   width: 750rpx;
   height: 346rpx;
   position: relative;
-  background-color: #20A0FF;
+  background-color: #20a0ff;
   position: absolute;
   left: 0;
   top: 0;
@@ -127,27 +131,24 @@ pointer-events: none;
 
 ## 文字禁止选择
 
-``` css
-user-select:none;
+```css
+user-select: none;
 ```
 
 ## 多重边框
 
 ![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/95c60b2a7bc848389ad39cc3883fc437~tplv-k3u1fbpfcp-zoom-1.image)
 
-``` css
-<div class="shadow"></div>
-
-.shadow {
-	width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background: #fafafa;
-    margin: 200px;
-    box-shadow: 0 0 0 10px #E8E2D6, 0 0 0 20px #E1D9C9,
-                0 0 0 30px #D9CFBB, 0 0 0 40px #D2C6AE,
-                0 0 0 50px #CABCA0, 0 0 0 60px #C3B393,
-                0 0 0 70px #BBA985, 0 0 0 80px #B4A078;
+```css
+<div class="shadow" > </div > .shadow {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #fafafa;
+  margin: 200px;
+  box-shadow: 0 0 0 10px #e8e2d6, 0 0 0 20px #e1d9c9, 0 0 0 30px #d9cfbb, 0 0 0
+      40px #d2c6ae, 0 0 0 50px #cabca0, 0 0 0 60px #c3b393, 0 0 0 70px #bba985, 0
+      0 0 80px #b4a078;
 }
 ```
 
@@ -155,11 +156,9 @@ user-select:none;
 
 ![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/23643e0b31084dacb9255d7b610edfd9~tplv-k3u1fbpfcp-zoom-1.image)
 
-``` css
-<div></div>
-
-div {
-	width: 209px;
+```css
+<div > </div > div {
+  width: 209px;
   margin: 29px auto;
   padding: 38px 16px;
   border-radius: 8px;
@@ -173,14 +172,17 @@ div {
 
 ![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e80c916510614e0bbd2a38e6a1d53951~tplv-k3u1fbpfcp-zoom-1.image)
 
-``` css
-<div class="progress-outer">
-  <div class="progress-enter">
-    <div class="progress-bg"></div>
-	</div>
-</div>
-
-.progress-outer {
+```css
+<div
+  class="progress-outer"
+  > <div
+  class="progress-enter"
+  > <div
+  class="progress-bg"
+  > </div
+  > </div
+  > </div
+  > .progress-outer {
   width: 60%;
   height: 12px;
   border-radius: 8px;
@@ -190,15 +192,22 @@ div {
 
 .progress-enter {
   height: inherit;
-  background: rgba(180, 160, 120, .2);
+  background: rgba(180, 160, 120, 0.2);
 }
 
 .progress-bg {
   width: 60%;
   height: inherit;
   border-radius: 6px;
-  background: repeating-linear-gradient(-45deg, #D9CFBB 25%, #C3B393 0, #C3B393 50%,
-                                        #D9CFBB 0, #D9CFBB 75%, #C3B393 0);
+  background: repeating-linear-gradient(
+    -45deg,
+    #d9cfbb 25%,
+    #c3b393 0,
+    #c3b393 50%,
+    #d9cfbb 0,
+    #d9cfbb 75%,
+    #c3b393 0
+  );
   background-size: 16px 16px;
   animation: panoramic 20s linear infinite;
 }
@@ -214,13 +223,15 @@ div {
 
 ![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/08730f206c3946c9ad3b556d58d96ba0~tplv-k3u1fbpfcp-zoom-1.image)
 
-``` css
-<div class="coupon-card"></div>
-
-.coupon-card {
+```css
+<div class="coupon-card" > </div > .coupon-card {
   width: 200px;
   height: 120px;
-  background-image: radial-gradient(circle at 100px -8px, transparent 20px, #b4a078 20px);
+  background-image: radial-gradient(
+    circle at 100px -8px,
+    transparent 20px,
+    #b4a078 20px
+  );
 }
 ```
 
@@ -228,25 +239,39 @@ div {
 
 ![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/8c50219683a64825bfddf8756e3c0a03~tplv-k3u1fbpfcp-zoom-1.image)
 
-``` css
-<div class="ellipse"></div>
-<div class="ellipse"></div>
-<div class="ellipse"></div>
-<div class="ellipse"></div>
-<div class="ellipse"></div>
-<div class="ellipse"></div>
-
-div {
-  width: 200px; height: 150px;
+```css
+<div
+  class="ellipse"
+  > </div
+  > <div
+  class="ellipse"
+  > </div
+  > <div
+  class="ellipse"
+  > </div
+  > <div
+  class="ellipse"
+  > </div
+  > <div
+  class="ellipse"
+  > </div
+  > <div
+  class="ellipse"
+  > </div
+  > div {
+  width: 200px;
+  height: 150px;
   background: #b4a078;
   margin-bottom: 30px;
 }
 .ellipse:nth-of-type(1) {
-  width: 300px; height: 150px;
+  width: 300px;
+  height: 150px;
   border-radius: 50% / 100% 100% 0 0;
 }
 .ellipse:nth-of-type(2) {
-  width: 150px; height: 150px;
+  width: 150px;
+  height: 150px;
   border-radius: 100% 0 0 0;
 }
 .ellipse:nth-of-type(3) {
@@ -270,29 +295,176 @@ div {
 
 ![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/28061d788c264d298b494bc43a80294e~tplv-k3u1fbpfcp-zoom-1.image)
 
-``` css
-<div class="bevel-corners">
-  <p>① linear-gradient</p>
-	<div>A paragraph of filler text.La la la de dah de dah de dah de la.La la la de dah de dah de dah de la.La la la
-de dah de dah de dah de la.</div>
-</div>
-<div class="bevel-corners">
-  <p>② radial-gradient</p>
-	<div>A paragraph of filler text.La la la de dah de dah de dah de la.La la la de dah de dah de dah de la.La la la
-de dah de dah de dah de la.</div>
-</div>
-<div class="bevel-corners">
-  <p>③ 内联SVG</p>
-	<div>A paragraph of filler text.La la la de dah de dah de dah de la.La la la de dah de dah de dah de la.La la la
-de dah de dah de dah de la.</div>
-</div>
-<div class="bevel-corners">
-  <p>④ clip-path</p>
-	<div>A paragraph of filler text.La la la de dah de dah de dah de la.La la la de dah de dah de dah de la.La la la
-de dah de dah de dah de la.</div>
-</div>
-
-.bevel-corners {
+```css
+<div
+  class="bevel-corners"
+  > <p
+  > ①
+  linear-gradient</p
+  > <div
+  > A
+  paragraph
+  of
+  filler
+  text.La
+  la
+  la
+  de
+  dah
+  de
+  dah
+  de
+  dah
+  de
+  la.La
+  la
+  la
+  de
+  dah
+  de
+  dah
+  de
+  dah
+  de
+  la.La
+  la
+  la
+  de
+  dah
+  de
+  dah
+  de
+  dah
+  de
+  la.</div
+  > </div
+  > <div
+  class="bevel-corners"
+  > <p
+  > ②
+  radial-gradient</p
+  > <div
+  > A
+  paragraph
+  of
+  filler
+  text.La
+  la
+  la
+  de
+  dah
+  de
+  dah
+  de
+  dah
+  de
+  la.La
+  la
+  la
+  de
+  dah
+  de
+  dah
+  de
+  dah
+  de
+  la.La
+  la
+  la
+  de
+  dah
+  de
+  dah
+  de
+  dah
+  de
+  la.</div
+  > </div
+  > <div
+  class="bevel-corners"
+  > <p
+  > ③
+  内联SVG</p
+  > <div
+  > A
+  paragraph
+  of
+  filler
+  text.La
+  la
+  la
+  de
+  dah
+  de
+  dah
+  de
+  dah
+  de
+  la.La
+  la
+  la
+  de
+  dah
+  de
+  dah
+  de
+  dah
+  de
+  la.La
+  la
+  la
+  de
+  dah
+  de
+  dah
+  de
+  dah
+  de
+  la.</div
+  > </div
+  > <div
+  class="bevel-corners"
+  > <p
+  > ④
+  clip-path</p
+  > <div
+  > A
+  paragraph
+  of
+  filler
+  text.La
+  la
+  la
+  de
+  dah
+  de
+  dah
+  de
+  dah
+  de
+  la.La
+  la
+  la
+  de
+  dah
+  de
+  dah
+  de
+  dah
+  de
+  la.La
+  la
+  la
+  de
+  dah
+  de
+  dah
+  de
+  dah
+  de
+  la.</div
+  > </div
+  > .bevel-corners {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -301,52 +473,81 @@ de dah de dah de dah de la.</div>
   margin-bottom: 20px;
 }
 
-.bevel-corners>div {
+.bevel-corners > div {
   width: 249px;
-  color: #FFF;
+  color: #fff;
   padding: 1.2em 1.8em;
   hyphens: auto;
   text-align: justify;
   background: #b4a078;
 }
 
-.bevel-corners>p {
+.bevel-corners > p {
   width: 116px;
-  ;
 }
 
-.bevel-corners:nth-of-type(1)>div {
+.bevel-corners:nth-of-type(1) > div {
   background: linear-gradient(45deg, transparent 12px, #b4a078 13px) bottom left,
-                              linear-gradient(135deg, transparent 12px, #b4a078 13px) top left,
-                              linear-gradient(-135deg, transparent 12px, #b4a078 13px) top right,
-                              linear-gradient(-45deg, transparent 12px, #b4a078 13px) bottom right;
-                              background-size: 51% 51%;
-                              background-repeat: no-repeat;
-                              }
+    linear-gradient(135deg, transparent 12px, #b4a078 13px) top left,
+    linear-gradient(-135deg, transparent 12px, #b4a078 13px) top right, linear-gradient(
+        -45deg,
+        transparent 12px,
+        #b4a078 13px
+      ) bottom right;
+  background-size: 51% 51%;
+  background-repeat: no-repeat;
+}
 
-.bevel-corners:nth-of-type(2)>div {
-  background: radial-gradient(circle at bottom left, transparent 15px, #b4a078 16px) bottom left,
-                              radial-gradient(circle at top left, transparent 15px, #b4a078 16px) top left,
-                              radial-gradient(circle at top right, transparent 15px, #b4a078 16px) top right,
-                              radial-gradient(circle at bottom right, transparent 15px, #b4a078 16px) bottom right;
-                              background-size: 51% 51%;
-                              background-repeat: no-repeat;
-                              }
+.bevel-corners:nth-of-type(2) > div {
+  background: radial-gradient(
+        circle at bottom left,
+        transparent 15px,
+        #b4a078 16px
+      ) bottom left, radial-gradient(
+        circle at top left,
+        transparent 15px,
+        #b4a078 16px
+      ) top left,
+    radial-gradient(circle at top right, transparent 15px, #b4a078 16px) top right,
+    radial-gradient(circle at bottom right, transparent 15px, #b4a078 16px) bottom
+      right;
+  background-size: 51% 51%;
+  background-repeat: no-repeat;
+}
 
-.bevel-corners:nth-of-type(3)>div {
+.bevel-corners:nth-of-type(3) > div {
   padding: 0 9px;
   border: 18px solid transparent;
-  border-image: 1 url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="3" height="3" fill="%23b4a078"><polygon points="0,1 1,0 2,0 3,1 3,2 2,3 1,3 0,2"/> </svg>');
+  border-image: 1
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="3" height="3" fill="%23b4a078"><polygon points="0,1 1,0 2,0 3,1 3,2 2,3 1,3 0,2"/> </svg>');
   background-clip: padding-box;
 }
 
-.bevel-corners:nth-of-type(4)>div {
-  clip-path: polygon(20px 0, calc(100% - 20px) 0, 100% 20px, 100% calc(100% - 20px), calc(100% - 20px) 100%, 20px 100%, 0 calc(100% - 20px), 0 20px);
+.bevel-corners:nth-of-type(4) > div {
+  clip-path: polygon(
+    20px 0,
+    calc(100% - 20px) 0,
+    100% 20px,
+    100% calc(100% - 20px),
+    calc(100% - 20px) 100%,
+    20px 100%,
+    0 calc(100% - 20px),
+    0 20px
+  );
   transition: 1s clip-path;
 }
 
-.bevel-corners:nth-of-type(4):hover>div {
-  clip-path: polygon(0 0, 0 0, 100% 0, 100% 0, 100% 100%, 100% 100%, 0 100%, 0 100%);
+.bevel-corners:nth-of-type(4):hover > div {
+  clip-path: polygon(
+    0 0,
+    0 0,
+    100% 0,
+    100% 0,
+    100% 100%,
+    100% 100%,
+    0 100%,
+    0 100%
+  );
 }
 ```
 
@@ -354,34 +555,37 @@ de dah de dah de dah de la.</div>
 
 ![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/39cb5fb3500f4424bacc2cb1b3ad1bdf~tplv-k3u1fbpfcp-zoom-1.image)
 
-``` css
-<main class="main">
-  <div>
-  "O God, I could be bounded in a nutshell and count myself a king of infinite space, were it not that I have
-bad dreams."<br>
-“即使我身处果壳之中，我仍以为自己是宇宙之王”
-  	<footer>
-			<cite>William Shakespeare</cite>
-		</footer>
-	</div>
-</main>
-
-main {
+```css
+<main
+  class="main"
+  > <div
+  > "O God, I could be bounded in a nutshell and count myself a king of infinite space, were it not that I have
+bad dreams."<br
+  > “即使我身处果壳之中，我仍以为自己是宇宙之王”
+  <footer
+  > <cite
+  > William
+  Shakespeare</cite
+  > </footer
+  > </div
+  > </main
+  > main {
   width: 90%;
   margin: auto;
   padding: 59px 29px;
-  border-radius: .3em;
-  text-shadow: 0 1px 1px hsla(0, 0%, 100%, .3);
-  box-shadow: 0 0 0 1px hsla(0, 0%, 100%, .3) inset, 0 .3em 1em rgba(0, 0, 0, 0.12);
+  border-radius: 0.3em;
+  text-shadow: 0 1px 1px hsla(0, 0%, 100%, 0.3);
+  box-shadow: 0 0 0 1px hsla(0, 0%, 100%, 0.3) inset, 0 0.3em 1em rgba(0, 0, 0, 0.12);
   font: 150%/1.6 Baskerville, Palatino, serif;
 }
 
 main,
-  main>div::before {
-    background: url("https://lhammer.cn/You-need-to-know-css/static/city-night.jpg") fixed 0 / cover;
-  }
+main > div::before {
+  background: url("https://lhammer.cn/You-need-to-know-css/static/city-night.jpg")
+    fixed 0 / cover;
+}
 
-main>div::before {
+main > div::before {
   content: "";
   position: absolute;
   top: 0;
@@ -393,17 +597,17 @@ main>div::before {
   margin: -30px;
 }
 
-main>div {
+main > div {
   font-style: italic;
   color: #000;
   padding: 30px;
   hyphens: auto;
-  background: hsla(0, 0%, 100%, .5);
+  background: hsla(0, 0%, 100%, 0.5);
   overflow: hidden;
   position: relative;
 }
 
-main>div cite {
+main > div cite {
   font-style: normal;
 }
 
@@ -412,8 +616,9 @@ main footer {
 }
 ```
 
-## 一行CSS为网页添加暗黑模式
+## 一行 CSS 为网页添加暗黑模式
 
-``` css
+````css
 filter: invert(1) hue-rotate(180deg);
 ```a
+````
