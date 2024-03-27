@@ -1,5 +1,3 @@
-![alt text](image.png)
-
 ## 文本命名规范
 
 1.  index.css: 一般用于首页建立样式

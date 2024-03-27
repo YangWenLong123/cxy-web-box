@@ -21,32 +21,13 @@ css 中的长度单位一共有 8 个，分别是 px，em，pt，ex，pc，in，
 
 ## PPI
 
-每英寸包括的像素数
+PPI（Pixels Per Inch）是一个度量单位，用于描述屏幕或打印媒体上每英寸的像素数量。这个概念在计算机图形和显示技术中非常重要，因为它影响了图像的清晰度和分辨率。PPI 的值越高，图像的分辨率越高，因此在屏幕上看起来更清晰。
 
 ## 设备物理像素 (物理分辨率)
 
 设备的真实分辨率 屏幕有多少个像素点 就是多少分辨率
 
 以 iphone6 为例 物理分辨率为 750\*1334,也就是显示屏内部 led 灯的个数
-
-## 安装本地运行服务器 Live Server
-
-概念：一个具有实时加载功能的小型服务器，可以使用它来加载 html/css/javascript，但是不能用于部署最终站点。也就是说我们可以在项目中实时用 live-server 作为一个实时服务器实时查看开发的网页或项目效果。
-
-在设置 settings.json 中配置如下文件
-
-```json
-"liveServer.settings.port": 8080, //设置本地服务的端口号
-  "liveServer.settings.root": "/", //设置根目录，也就是打开的文件会在该目录下找
-  "liveServer.settings.CustomBrowser": "chrome", //设置默认打开的浏览器
-  "liveServer.settings.AdvanceCustomBrowserCmdLine": "chrome --incognito --remote-debugging-port=9222",
-  "liveServer.settings.NoBrowser": false,
-  "liveServer.settings.ignoredFiles": [//设置忽略的文件
-      ".vscode/**",
-      "**/*.scss",
-      "**/*.sass"
-  ]
-```
 
 ## 常见的系统分辨率
 
@@ -83,8 +64,6 @@ PC 端
 
 ## rem 布局
 
-一、方案一
-
 淘宝 FLexible 方案：<https://github.com/amfe/article/issues/17>
 
 原理：在 html 标签设置 font-size， rem 相对于根元素 size 大小,1rem = 75px;
@@ -104,64 +83,38 @@ PC 端
 }
 ```
 
-二、方案二
+## vue 中如何配置响应式布局
 
-利用 meta
+安装插件`postcss-px-to-viewport`
 
-```html
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="viewport" content="width=750, user-scalable=no" />
+```bash
+pnpm i postcss-px-to-viewport -D
 ```
 
-```css
-html {
-  font-size: calc(100vw / 7.5);
-  -webkit-text-size-adjust: 100%;
-}
+在`postcss.config.js`配置
+
+```js
+module.exports = ({ webpack }) => {
+  return {
+    plugins: {
+      "postcss-px-to-viewport": {
+        unitToConvert: "px", // 需要转换的单位，默认为"px"
+        viewportWidth: 750, // 设计稿的视口宽度
+        unitPrecision: 5, // 单位转换后保留的精度
+        propList: ["*"], // 能转化为vw的属性列表
+        viewportUnit: "vw", // 希望使用的视口单位
+        fontViewportUnit: "vw", // 字体使用的视口单位
+        selectorBlackList: [], // 需要忽略的CSS选择器，不会转为视口单位，使用原有的px等单位。
+        minPixelValue: 1, // 设置最小的转换数值，如果为1的话，只有大于1的值会被转换
+        mediaQuery: false, // 媒体查询里的单位是否需要转换单位
+        replace: true, //  是否直接更换属性值，而不添加备用属性
+        exclude: [/preview/, /header/], // 忽略某些文件夹下的文件或特定文件，例如 'node_modules' 下的文件
+        include: undefined, // 如果设置了include，那将只有匹配到的文件才会被转换
+        landscape: false, // 是否添加根据 landscapeWidth 生成的媒体查询条件 @media (orientation: landscape)
+      },
+    },
+  };
+};
 ```
 
-示例：设计稿 banner：750px \* 210px
-
-```css
- {
-  width: 7.5rem;
-  height: 2.1rem;
-}
-```
-
-## 百分比布局
-
-通过百分比单位，可以使得浏览器中组件的宽和高随着浏览器的高度的变化而变化，从而实现响应式的效果。整体布局不变.
-
-设计方法：使用%百分比定义宽度，高度大都是用 px 来固定住，可以根据可视区域 (viewport) 和父元素的实时尺寸进行调整，尽可能的适应各种分辨率。往往配合 max-width/min-width 等属性控制尺寸流动范围以免过大或者过小影响阅读
-
-关于百分比的具体分析
-
-- 子元素 height 和 width/ top 和 bottom 、left 和 right 的百分比是相对于父元素 width，height
-- 子元素的 padding/margin 不论是垂直方向或者是水平方向，都相对于**直接父亲元素的 width**，而与父元素的 height 无关。
-
-示例：
-
-设计稿宽度：750
-
-图片尺寸：375px \* 200px
-
-```css
- {
-  width: 50%; // 375 / 750 高度自适应
-}
-```
-
-图片距离左侧：20px;
-
-```css
- {
-  margin-left: 2.7%; // 20 / 750
-}
-```
-
-**缺点**:
-
-- 适配计算麻烦
-- 各个属性中如果使用百分比，其相对的元素的属性并不是唯一的，使布局问题变得复杂.
-- 如果屏幕尺度跨度太大，那么在相对其原始设计而言过小或过大的屏幕上不能正常显示。因为宽度使用%百分比定义，但是高度和文字大小等大都是用 px 来固定，所以在大屏幕的手机下显示效果会变成有些页面元素宽度被拉的很长，但是高度、文字大小还是和原来一样，显示非常不协调。
+设计稿尺寸配置的 750px, 所以只要把设计稿尺寸调整成 750 开发即可，会自动把 px 专程 vw,vh
