@@ -80,7 +80,7 @@ export default defineConfig({
       },
       {
         text: "截图",
-        link: "http://xyz.alongweb.top/screenshot",
+        link: "http://xyz.alongweb.top/shot",
         target: "_self",
         rel: "sponsored",
       },
@@ -934,6 +934,7 @@ export default defineConfig({
             { text: "前端项目如何接入扫码枪", link: "/book/book3.md" },
             { text: "Web版Excel制作过程", link: "/book/book4.md" },
             { text: "浏览器关闭发送异步请求", link: "/book/book5.md" },
+            { text: "如何实现一个在线图片库", link: "/book/book6.md" },
           ],
         },
       ],
