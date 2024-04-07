@@ -879,49 +879,49 @@ export default defineConfig({
 
       "/project/": [
         {
-          text: "点餐后台管理系统",
+          text: "点餐系统",
           items: [
             { text: "介绍", link: "/project/.md" },
-            { text: "接口文档", link: "/project/project-1.md" },
-            { text: "项目创建", link: "/project/project-2.md" },
-            { text: "基础配置", link: "/project/project-3.md" },
-            { text: "规范配置", link: "/project/project-4.md" },
-            { text: "登录页开发", link: "/project/project-5.md" },
-            { text: "表单增删改查", link: "/project/project-6.md" },
-            { text: "打包配置", link: "/project/project-7.md" },
-            { text: "发布上线", link: "/project/project-8.md" },
+            // { text: "接口文档", link: "/project/project-1.md" },
+            // { text: "项目创建", link: "/project/project-2.md" },
+            // { text: "基础配置", link: "/project/project-3.md" },
+            // { text: "规范配置", link: "/project/project-4.md" },
+            // { text: "登录页开发", link: "/project/project-5.md" },
+            // { text: "表单增删改查", link: "/project/project-6.md" },
+            // { text: "打包配置", link: "/project/project-7.md" },
+            // { text: "发布上线", link: "/project/project-8.md" },
           ],
         },
-        {
-          text: "点餐后台管理系统接口开发",
-          items: [{ text: "前言", link: "/project/project-18.md" }],
-        },
-        {
-          text: "点餐小程序",
-          items: [
-            { text: "介绍", link: "/project/project-9.md" },
-            { text: "接口文档", link: "/project/project-10.md" },
-            { text: "项目创建", link: "/project/project-11.md" },
-            { text: "项目配置", link: "/project/project-12.md" },
-            { text: "点餐页面", link: "/project/project-13.md" },
-            { text: "点餐历史记", link: "/project/project-14.md" },
-            { text: "个人中心页面", link: "/project/project-15.md" },
-            { text: "导出数据", link: "/project/project-16.md" },
-            { text: "发布上线", link: "/project/project-17.md" },
-          ],
-        },
-        {
-          text: "Chrome插件开发",
-          items: [{ text: "前言", link: "/project/project-19.md" }],
-        },
-        {
-          text: "Meet You H5",
-          items: [{ text: "前言", link: "/project/project-20.md" }],
-        },
-        {
-          text: "APP开发",
-          items: [{ text: "前言", link: "/project/project-21.md" }],
-        },
+        // {
+        //   text: "点餐后台管理系统接口开发",
+        //   items: [{ text: "前言", link: "/project/project-18.md" }],
+        // },
+        // {
+        //   text: "点餐小程序",
+        //   items: [
+        //     { text: "介绍", link: "/project/project-9.md" },
+        //     { text: "接口文档", link: "/project/project-10.md" },
+        //     { text: "项目创建", link: "/project/project-11.md" },
+        //     { text: "项目配置", link: "/project/project-12.md" },
+        //     { text: "点餐页面", link: "/project/project-13.md" },
+        //     { text: "点餐历史记", link: "/project/project-14.md" },
+        //     { text: "个人中心页面", link: "/project/project-15.md" },
+        //     { text: "导出数据", link: "/project/project-16.md" },
+        //     { text: "发布上线", link: "/project/project-17.md" },
+        //   ],
+        // },
+        // {
+        //   text: "Chrome插件开发",
+        //   items: [{ text: "前言", link: "/project/project-19.md" }],
+        // },
+        // {
+        //   text: "Meet You H5",
+        //   items: [{ text: "前言", link: "/project/project-20.md" }],
+        // },
+        // {
+        //   text: "APP开发",
+        //   items: [{ text: "前言", link: "/project/project-21.md" }],
+        // },
       ],
 
       "/book/": [
