@@ -3,13 +3,24 @@ import { defineConfig } from "vitepress";
 export default defineConfig({
   // lang: 'en-US',
   title: "Web Box",
-  description: "Just playing around.",
+  description:
+    "Web Box, 程序员盒子, 一个网站、提供一揽子的服务, along, 前端笔记",
   lastUpdated: true,
   head: [
-    // [['meta', { name: 'keywords', content: 'Web Box, 程序员盒子, 一个网站、提供一揽子的服务, along, 前端笔记' }]],
-    // ['meta', { name: 'theme-color', content: '#3c8772' }],
+    [
+      [
+        "meta",
+        {
+          name: "keywords",
+          content:
+            "Web Box, 程序员盒子, 一个网站、提供一揽子的服务, along, 前端笔记",
+        },
+      ],
+    ],
+    ["meta", { name: "theme-color", content: "#3c8772" }],
     ["link", { rel: "stylesheet", href: "/styles/global.css" }],
     ["link", { rel: "icon", href: "/image/logo.svg", type: "image/svg+xml" }],
+    ["meta", { name: "baidu-site-verification", content: "codeva-KbKFpvJZ4Z" }],
   ],
   themeConfig: {
     logo: "/image/logo.svg",
