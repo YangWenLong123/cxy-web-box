@@ -48,9 +48,9 @@ features:
   - title: "数据结构与算法"
     details: "数据结构与算法是计算机科学中非常重要的一部分，它们是计算机编程的基础"
     link: /algorithm/
-  - title: "nest"
-    details: "Nest是一个Node.js的框架，它使用了现代的JavaScript或TypeScript编写"
-    link: /nest/
+  # - title: "nest"
+  #   details: "Nest是一个Node.js的框架，它使用了现代的JavaScript或TypeScript编写"
+  #   link: /nest/
   - title: "vue2"
     details: "Vue 是一套用于构建用户界面的渐进式框架"
     link: /vue/
@@ -63,35 +63,35 @@ features:
   - title: "uniapp"
     details: "跨平台前端应用的框架，一套代码，可发布到多个平台"
     link: /uniapp/
-  - title: "react"
-    details: "React是一种非常流行的JavaScript库，用于构建用户界面"
-    link: /react/
-  - title: "umi"
-    details: "企业级前端开发框架，构建react, mobile, vue项目"
-    link: /umi/
-  - title: "小程序"
-    details: "小程序开发流程"
-    link: /wx/
-  - title: "electron-vite"
-    details: "electron-vite 是一个新型构建工具，旨在为 Electron 提供更快、更精简的开发体验"
-    link: /electron/
+  # - title: "react"
+  #   details: "React是一种非常流行的JavaScript库，用于构建用户界面"
+  #   link: /react/
+  # - title: "umi"
+  #   details: "企业级前端开发框架，构建react, mobile, vue项目"
+  #   link: /umi/
+  # - title: "小程序"
+  #   details: "小程序开发流程"
+  #   link: /wx/
+  # - title: "electron-vite"
+  #   details: "electron-vite 是一个新型构建工具，旨在为 Electron 提供更快、更精简的开发体验"
+  #   link: /electron/
   - title: "Linux手册"
     details: "Linux的常用指令"
     link: /linux/
   - title: "http"
     details: "HTTP是一种用于传输数据的协议，它可以控制缓存和认证，开放同源限制等"
     link: /http/
-  - title: "手把手教你写一个企业级项目"
-    details: "带你从0到1完成一个企业级项目"
-    link: /project/
+  # - title: "手把手教你写一个企业级项目"
+  # details: "带你从0到1完成一个企业级项目"
+  # link: /project/
   - title: "技术文章"
     details: "每周一文，坚持学习"
     link: /book/
   # - title: "插件"
   #   details: "常用插件收藏"
   #   link: /plug/
-  - title: "面试宝典"
-    details: "面试宝典"
-    link: /interview/
+  # - title: "面试宝典"
+  #   details: "面试宝典"
+  #   link: /interview/
 # https://github.dev/process1024/vitepress
 ---

@@ -8,19 +8,17 @@ export default defineConfig({
   lastUpdated: true,
   head: [
     [
-      [
-        "meta",
-        {
-          name: "keywords",
-          content:
-            "Web Box, 程序员盒子, 一个网站、提供一揽子的服务, along, 前端笔记",
-        },
-      ],
+      "meta",
+      {
+        name: "keywords",
+        content:
+          "Web Box, 程序员盒子, 一个网站、提供一揽子的服务, along, 前端笔记, 前端知识库,Along,Vue,TypeScript,Css,Html5, 盒子, Box, Web",
+      },
     ],
+    ["meta", { name: "baidu-site-verification", content: "codeva-KbKFpvJZ4Z" }],
     ["meta", { name: "theme-color", content: "#3c8772" }],
     ["link", { rel: "stylesheet", href: "/styles/global.css" }],
     ["link", { rel: "icon", href: "/image/logo.svg", type: "image/svg+xml" }],
-    ["meta", { name: "baidu-site-verification", content: "codeva-KbKFpvJZ4Z" }],
   ],
   themeConfig: {
     logo: "/image/logo.svg",
@@ -73,9 +71,7 @@ export default defineConfig({
       },
       // {
       //   text: "小册",
-      //   link: "http://xyz.alongweb.top/book",
-      //   target: "_self",
-      //   rel: "sponsored",
+      //   link: "/xiaoce/",
       // },
       {
         text: "开放API",
@@ -94,6 +90,13 @@ export default defineConfig({
         link: "http://xyz.alongweb.top/shot",
         target: "_self",
         rel: "sponsored",
+      },
+      {
+        text: "面试",
+        items: [
+          { text: "HTML5", link: "/interview/" },
+          { text: "CSS3", link: "/interview/index1.md" },
+        ],
       },
       // {
       //   text: "后台管理模版",
@@ -117,10 +120,10 @@ export default defineConfig({
       //   text: "关于我",
       //   link: "/introduce/",
       // },
-      // {
-      //   text: "赞助",
-      //   link: "/sponsor/",
-      // },
+      {
+        text: "赞助",
+        link: "/sponsor/",
+      },
       // {
       //   text: "插件",
       //   link: "https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd?hl=zh-CN",
@@ -133,6 +136,13 @@ export default defineConfig({
       // }
     ],
     sidebar: {
+      xiaoce: [
+        {
+          text: "Vue3 + Nest.js 点餐系统",
+          items: [{ text: "前言", link: "/html/" }],
+        },
+      ],
+
       "/html/": [
         {
           text: "HTML5",
@@ -958,15 +968,15 @@ export default defineConfig({
           ],
         },
       ],
-      "/interview/": [
-        {
-          text: "面试宝典",
-          items: [
-            { text: "html", link: "/interview/.md" },
-            { text: "css", link: "/interview/index1.md" },
-          ],
-        },
-      ],
+      // "/interview/": [
+      //   {
+      //     text: "面试宝典",
+      //     items: [
+      //       { text: "html", link: "/interview/.md" },
+      //       { text: "css", link: "/interview/index1.md" },
+      //     ],
+      //   },
+      // ],
     },
     socialLinks: [
       { icon: "github", link: "https://github.com/YangWenLong123" },
