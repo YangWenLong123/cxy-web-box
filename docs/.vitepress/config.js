@@ -69,10 +69,7 @@ export default defineConfig({
         target: "_self",
         rel: "sponsored",
       },
-      // {
-      //   text: "小册",
-      //   link: "/xiaoce/",
-      // },
+
       {
         text: "开放API",
         link: "http://xyz.alongweb.top/swagger",
@@ -80,7 +77,7 @@ export default defineConfig({
         rel: "sponsored",
       },
       {
-        text: "懒饭",
+        text: "食谱",
         link: "http://food.alongweb.top/preview",
         target: "_self",
         rel: "sponsored",
@@ -98,6 +95,21 @@ export default defineConfig({
           { text: "CSS3", link: "/interview/index1.md" },
         ],
       },
+      {
+        text: "小册",
+        items: [
+          { text: "linux小册", link: "/linux/" },
+          { text: "http小册", link: "/http/" },
+        ],
+      },
+      {
+        text: "前端文章",
+        link: "/book/",
+      },
+      // {
+      //   text: "Meet You",
+      //   link: "/meet/",
+      // },
       // {
       //   text: "后台管理模版",
       //   link: "http://admin.alongweb.top",
@@ -950,12 +962,24 @@ export default defineConfig({
           text: "每周一文",
           items: [
             { text: "前言", link: "/book/.md" },
-            { text: "前端截图的几种方案方案", link: "/book/book1.md" },
+            { text: "浏览器截图", link: "/book/book1.md" },
             { text: "Electron开发跨平台应用", link: "/book/book2.md" },
-            { text: "前端项目如何接入扫码枪", link: "/book/book3.md" },
+            { text: "扫码枪接入流程", link: "/book/book3.md" },
             { text: "Web版Excel制作过程", link: "/book/book4.md" },
             { text: "浏览器关闭发送异步请求", link: "/book/book5.md" },
-            { text: "如何实现一个在线图片库", link: "/book/book6.md" },
+            { text: "实现一个在线图片库", link: "/book/book6.md" },
+            {
+              text: "JavaScript 中创建自定义事件",
+              link: "/book/book7.md",
+            },
+            {
+              text: "JavaScript 装饰器",
+              link: "/book/book8.md",
+            },
+            {
+              text: "WebSocket 的请求头(header)中如何携带 authorization",
+              link: "/book/book9.md",
+            },
           ],
         },
       ],

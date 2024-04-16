@@ -12,7 +12,7 @@ keywords:
   - along
   - 前端笔记
 author: along
-description: "程序员盒子(Web Box), 一个网站、提供一揽子的服务"
+description: "程序员盒子, 程序员盒子(Web Box), Web Box, 一个网站、提供一揽子的服务"
 
 hero:
   name: 程序员盒子(Web Box)
@@ -75,18 +75,18 @@ features:
   # - title: "electron-vite"
   #   details: "electron-vite 是一个新型构建工具，旨在为 Electron 提供更快、更精简的开发体验"
   #   link: /electron/
-  - title: "Linux手册"
-    details: "Linux的常用指令"
-    link: /linux/
-  - title: "http"
-    details: "HTTP是一种用于传输数据的协议，它可以控制缓存和认证，开放同源限制等"
-    link: /http/
+  # - title: "Linux手册"
+  #   details: "Linux的常用指令"
+  #   link: /linux/
+  # - title: "http"
+  #   details: "HTTP是一种用于传输数据的协议，它可以控制缓存和认证，开放同源限制等"
+  #   link: /http/
   # - title: "手把手教你写一个企业级项目"
   # details: "带你从0到1完成一个企业级项目"
   # link: /project/
-  - title: "技术文章"
-    details: "每周一文，坚持学习"
-    link: /book/
+  # - title: "技术文章"
+  #   details: "每周一文，坚持学习"
+  #   link: /book/
   # - title: "插件"
   #   details: "常用插件收藏"
   #   link: /plug/
