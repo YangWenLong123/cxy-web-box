@@ -577,7 +577,7 @@ export default defineConfig({
             { text: "unplugin-auto-import/vite", link: "/vue3/index54.md" },
             { text: "vite-plugin-inspect", link: "/vue3/index55.md" },
             { text: "vueuse", link: "/vue3/index56.md" },
-            { text: "vite.config", link: "/vue3/index56.md" },
+            { text: "vite.config", link: "/vue3/index57.md" },
           ],
         },
         {
@@ -586,6 +586,18 @@ export default defineConfig({
             { text: "Shared Composable", link: "/vue3/index30.md" },
             { text: "v3 source code", link: "/vue3/index40.md" },
             { text: "从vue2迁移", link: "/vue3/index70.md" },
+          ],
+        },
+        {
+          text: "试炼塔",
+          items: [
+            { text: "自定义修饰符", link: "/vue3/index58.md" },
+            { text: "验证Props", link: "/vue3/index59.md" },
+            { text: "可写的计算属性", link: "/vue3/index60.md" },
+            { text: "watch 全家桶", link: "/vue3/index61.md" },
+            { text: "浅层 ref", link: "/vue3/index62.md" },
+            { text: "切换器", link: "/vue3/index63.md" },
+            { text: "计数器", link: "/vue3/index64.md" },
           ],
         },
       ],
