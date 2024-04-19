@@ -103,8 +103,11 @@ export default defineConfig({
         ],
       },
       {
-        text: "前端文章",
-        link: "/book/",
+        text: "博客文章",
+        items: [
+          { text: "每周一文", link: "/book/" },
+          { text: "JavaScript 30 Seconds", link: "/javascript/" },
+        ],
       },
       // {
       //   text: "Meet You",
@@ -239,6 +242,7 @@ export default defineConfig({
             { text: "前端缓存", link: "/js/js-50.md" },
             { text: "Event loop", link: "/js/js-54.md" },
             { text: "reduce的20种用法", link: "/js/js-59.md" },
+            { text: "终结异步函数调用", link: "/js/js-60.md" },
           ],
         },
         {
@@ -1003,6 +1007,13 @@ export default defineConfig({
           ],
         },
       ],
+      "/javascript/": [
+        {
+          text: " JavaScript 30 Seconds",
+          items: [{ text: "前言", link: "/javascript/.md" }],
+        },
+      ],
+
       "/plug/": [
         {
           text: "vue插件收藏",
