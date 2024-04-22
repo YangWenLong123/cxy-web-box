@@ -69,13 +69,12 @@ export default defineConfig({
         target: "_self",
         rel: "sponsored",
       },
-
-      {
-        text: "开放API",
-        link: "http://xyz.alongweb.top/swagger",
-        target: "_self",
-        rel: "sponsored",
-      },
+      // {
+      //   text: "开放API",
+      //   link: "http://xyz.alongweb.top/swagger",
+      //   target: "_self",
+      //   rel: "sponsored",
+      // },
       {
         text: "食谱",
         link: "http://food.alongweb.top/preview",
@@ -1010,7 +1009,13 @@ export default defineConfig({
       "/javascript/": [
         {
           text: " JavaScript 30 Seconds",
-          items: [{ text: "前言", link: "/javascript/.md" }],
+          items: [
+            { text: "前言", link: "/javascript/.md" },
+            {
+              text: "JavaScript 中的大小写转换",
+              link: "/javascript/index1.md",
+            },
+          ],
         },
       ],
 
