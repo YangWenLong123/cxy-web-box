@@ -92,6 +92,7 @@ export default defineConfig({
         items: [
           { text: "HTML5", link: "/interview/" },
           { text: "CSS3", link: "/interview/index1.md" },
+          { text: "JavaScript", link: "/javascript-mianshi/" },
         ],
       },
       {
@@ -565,9 +566,11 @@ export default defineConfig({
             { text: "Teleport", link: "/vue3/index41.md" },
             { text: "Suspense", link: "/vue3/index42.md" },
             { text: "3.3主要特性", link: "/vue3/index43.md" },
+            { text: "3.4主要特性", link: "/vue3/index47.md" },
             // { text: 'vue-property-decorator', link: '/vue3/index44.md' },
             { text: "composition", link: "/vue3/index45.md" },
             { text: "Fragments", link: "/vue3/index46.md" },
+            { text: "Vue3组合式APi使用指南", link: "/vue3/index48.md" },
           ],
         },
         {
@@ -1025,6 +1028,15 @@ export default defineConfig({
           items: [
             { text: "拖拽插件", link: "/index/.md" },
             { text: "图片预览", link: "/index1/.md" },
+          ],
+        },
+      ],
+      "/javascript-mianshi/": [
+        {
+          text: "JavaScript面试题库",
+          items: [
+            { text: "基础篇", link: "/javascript-mianshi/index.md" },
+            { text: "进阶篇", link: "/javascript-mianshi/index1.md" },
           ],
         },
       ],
