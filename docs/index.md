@@ -69,9 +69,9 @@ features:
   # - title: "umi"
   #   details: "企业级前端开发框架，构建react, mobile, vue项目"
   #   link: /umi/
-  # - title: "小程序"
-  #   details: "小程序开发流程"
-  #   link: /wx/
+  - title: "小程序"
+    details: "小程序开发流程"
+    link: /wx/
   # - title: "electron-vite"
   #   details: "electron-vite 是一个新型构建工具，旨在为 Electron 提供更快、更精简的开发体验"
   #   link: /electron/

@@ -795,6 +795,14 @@ export default defineConfig({
       ],
       "/wx/": [
         {
+          text: "前言",
+          items: [
+            { text: "小程序简介", link: "/wx/index.md" },
+            { text: "小程序框架选择", link: "/wx/index1.md" },
+            { text: "社区资源", link: "/wx/index2.md" },
+          ],
+        },
+        {
           text: "基础",
           items: [],
         },
