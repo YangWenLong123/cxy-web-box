@@ -804,7 +804,10 @@ export default defineConfig({
         },
         {
           text: "基础",
-          items: [],
+          items: [
+            { text: "uniapp-页面", link: "/wx/index3.md" },
+            { text: "uniapp-引用组件", link: "/wx/index4.md" },
+          ],
         },
         {
           text: "进阶",
