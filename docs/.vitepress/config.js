@@ -17,7 +17,7 @@ export default defineConfig({
     ],
     ["meta", { name: "baidu-site-verification", content: "codeva-KbKFpvJZ4Z" }],
     ["meta", { name: "theme-color", content: "#3c8772" }],
-    ["link", { rel: "stylesheet", href: "/styles/global.css" }],
+    // ["link", { rel: "stylesheet", href: "/styles/global.css" }],
     ["link", { rel: "icon", href: "/image/logo.svg", type: "image/svg+xml" }],
   ],
   themeConfig: {
@@ -90,9 +90,13 @@ export default defineConfig({
       {
         text: "面试",
         items: [
-          { text: "HTML5", link: "/interview/" },
-          { text: "CSS3", link: "/interview/index1.md" },
-          { text: "JavaScript", link: "/javascript-mianshi/" },
+          { text: "HTML5", link: "/ms/interview/" },
+          { text: "CSS3", link: "/ms/interview/index1.md" },
+          { text: "JavaScript", link: "/ms/javascript/" },
+          { text: "Vue", link: "/ms/vue/" },
+          { text: "React", link: "/ms/react/" },
+          { text: "性能优化", link: "/ms/performance/" },
+          { text: "部署", link: "/ms/deploy/" },
         ],
       },
       {
@@ -1042,12 +1046,49 @@ export default defineConfig({
           ],
         },
       ],
-      "/javascript-mianshi/": [
+      "/ms/javascript/": [
         {
           text: "JavaScript面试题库",
           items: [
-            { text: "基础篇", link: "/javascript-mianshi/index.md" },
-            { text: "进阶篇", link: "/javascript-mianshi/index1.md" },
+            { text: "JavaScript面试题上", link: "/ms/javascript/index.md" },
+            { text: "JavaScript面试题中", link: "/ms/javascript/index1.md" },
+            { text: "JavaScript面试题下", link: "/ms/javascript/index2.md" },
+          ],
+        },
+      ],
+      "/ms/vue/": [
+        {
+          text: "Vue面试题库",
+          items: [
+            { text: "基础篇", link: "/ms/vue/index.md" },
+            { text: "进阶篇", link: "/ms/vue/index1.md" },
+          ],
+        },
+      ],
+      "/ms/react/": [
+        {
+          text: "React面试题库",
+          items: [
+            { text: "基础篇", link: "/ms/react/index.md" },
+            { text: "进阶篇", link: "/ms/react/index1.md" },
+          ],
+        },
+      ],
+      "/ms/performance/": [
+        {
+          text: "性能优化",
+          items: [
+            { text: "基础篇", link: "/ms/performance/index.md" },
+            { text: "进阶篇", link: "/ms/performance/index1.md" },
+          ],
+        },
+      ],
+      "/ms/deploy/": [
+        {
+          text: "部署",
+          items: [
+            { text: "基础篇", link: "/ms/deploy/index.md" },
+            { text: "进阶篇", link: "/ms/deploy/index1.md" },
           ],
         },
       ],
