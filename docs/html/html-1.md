@@ -1,4 +1,4 @@
-### Referrer
+## 1、Referrer
 
 Referer 是 HTTP 请求头的一个字段，包含了当前请求页面的来源页面的地址，通过该字段，我们可以检测访客是从哪里来的。Referer 有以下作用[[6]](https://juejin.cn/post/6844903892170309640)：
 
@@ -15,7 +15,7 @@ Referer 是 HTTP 请求头的一个字段，包含了当前请求页面的来源
 console.log(document.referrer);
 ```
 
-### Referrer-Policy
+## 2、Referrer-Policy
 
 Referrer Policy 可以有多个值，每个值都有其自己的含义和使用场景。以下是一些常见的 Referrer Policy 值：[](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Headers/Referrer-Policy)
 
@@ -28,13 +28,13 @@ Referrer Policy 可以有多个值，每个值都有其自己的含义和使用�
 - strict-origin-when-cross-origin：如果请求和当前页面同源，则与 strict-origin 相同，否则只包含当前页面的 origin。
 - unsafe-url：请求会包含完整的 URL，包括路径和查询参数。此值与不设置 Referrer Policy 的效果相同。
 
-### 集成到 HTMl
+## 3、集成到 HTMl
 
 ```html
 <meta name="referrer" content="origin" />
 ```
 
-### 什么情况会丢失 Referrer
+## 4、什么情况会丢失 Referrer
 
 - 直接流量：访客是通过直接键入地址、点击收藏夹地址、以及点击即时通讯工具地址等，进入网页的，这种情况产生的流量属于直接流量，直接流量的请求中没有 Referrer 信息。
 - 修改 Location 对象进行页面导航：Location 对象是一个用于页面导航的非常实用的对象，可以通过修改其中的一部分来实现页面的跳转。然而，通过修改 Location 对象进行页面导航的方法，会导致在 IE 下丢失 Referrer。
@@ -46,7 +46,7 @@ Referrer Policy 可以有多个值，每个值都有其自己的含义和使用�
 - 修改 Location 对象进行页面导航：开发者可以使用其他方法实现页面的跳转，例如通过 window.location.href 来实现。这种方式可以避免在 IE 下丢失 Referrer 的问题。
 - window.open 方式打开新窗口：开发者可以考虑在 window.open 的第三个参数中设置 ref 参数，将当前页面的 URL 作为 Referrer 传递给新开的窗口。
 
-### Referrer 应用场景
+## 5、Referrer 应用场景
 
 用户跟踪:Referer 字段可以告诉服务器用户在访问当前资源之前的位置，这对于用户跟踪非常有用.
 
