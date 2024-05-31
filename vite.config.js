@@ -7,7 +7,7 @@
  * @FilePath: /cxy-web-box/vite.config.js
  */
 
-import { defineConfig } from 'vite'
+import { defineConfig } from "vite";
 // import Vue from '@vitejs/plugin-vue'
 // import Markdown from 'vite-plugin-vue-markdown'
 // import MarkdownPreview from 'vite-plugin-markdown-preview'
@@ -15,9 +15,9 @@ import { defineConfig } from 'vite'
 const config = defineConfig({
   server: {
     hmr: {
-      overlay: false
-    }
-  }
+      overlay: false,
+    },
+  },
   // server: {
   //   host: 8889,
   //   open: true
@@ -29,6 +29,6 @@ const config = defineConfig({
   //   Markdown(),
   //   MarkdownPreview(),
   // ],
-})
+});
 
-export default config
+export default config;
