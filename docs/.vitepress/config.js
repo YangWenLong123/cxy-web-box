@@ -767,19 +767,54 @@ export default defineConfig({
       ],
       "/react/": [
         {
-          text: "基础",
+          text: "武功秘籍",
+          items: [
+            { text: "社区", link: "/react/index.md" },
+            { text: "UI组件库", link: "/react/index2.md" },
+            { text: "学习资源", link: "/react/index3.md" },
+          ],
+        },
+        {
+          text: "筑基期",
+          items: [
+            { text: "react介绍及快速入门", link: "/react/index5.md" },
+            { text: "一网打尽Hook", link: "/react/index6.md" },
+            {
+              text: "Hook 的闭包陷阱的成因和解决方案",
+              link: "/react/index7.md",
+            },
+            {
+              text: "常用的API",
+              link: "/react/index8.md",
+            },
+            {
+              text: "内置组件",
+              link: "/react/index9.md",
+            },
+            {
+              text: "受控模式 VS 非受控模式",
+              link: "/react/index10.md",
+            },
+          ],
+        },
+        {
+          text: "结丹期",
           items: [],
         },
         {
-          text: "进阶",
+          text: "元婴期",
           items: [],
         },
         {
-          text: "实战",
+          text: "化神期",
           items: [],
         },
         {
-          text: "插件",
+          text: "婴变期",
+          items: [],
+        },
+        {
+          text: "古神",
           items: [],
         },
       ],

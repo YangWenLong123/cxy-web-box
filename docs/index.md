@@ -57,15 +57,15 @@ features:
   - title: "vue3"
     details: "vue3提供了更好的性能,更小的捆绑包体积,更好的TS集成,用于处理大规模用例的新 API"
     link: /vue3/
-  - title: "vue企业级项目搭建流程"
+  - title: "react"
+    details: "React是一种非常流行的JavaScript库，用于构建用户界面"
+    link: /react/
+  - title: "vue2企业级项目搭建流程"
     details: "如何从0到1搭建一个vue的项目"
     link: /structure/
   - title: "uniapp"
     details: "跨平台前端应用的框架，一套代码，可发布到多个平台"
     link: /uniapp/
-  # - title: "react"
-  #   details: "React是一种非常流行的JavaScript库，用于构建用户界面"
-  #   link: /react/
   # - title: "umi"
   #   details: "企业级前端开发框架，构建react, mobile, vue项目"
   #   link: /umi/
