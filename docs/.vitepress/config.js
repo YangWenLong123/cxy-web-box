@@ -226,6 +226,7 @@ export default defineConfig({
             { text: "类", link: "/js/js-26.md" },
             { text: "Window", link: "/js/js-27.md" },
             { text: "requestAnimationFrame", link: "/js/js-32.md" },
+            { text: "URL", link: "/js/js-61.md" },
           ],
         },
         {
