@@ -248,6 +248,7 @@ export default defineConfig({
             { text: "Event loop", link: "/js/js-54.md" },
             { text: "reduce的20种用法", link: "/js/js-59.md" },
             { text: "终结异步函数调用", link: "/js/js-60.md" },
+            { text: "前端加密", link: "/js/js-62.md" },
           ],
         },
         {
