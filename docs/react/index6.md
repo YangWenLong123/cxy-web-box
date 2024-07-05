@@ -132,6 +132,12 @@ export default function Form() {
 
 ## useLayoutEffect
 
+`useLayoutEffect` 可能会影响性能。尽可能使用 `useEffect`。`useLayoutEffect` 是 `useEffect` 的一个版本，在浏览器重新绘制屏幕之前触发。
+
+```bash
+useLayoutEffect(setup, dependencies?)
+```
+
 ## useReducer
 
 ## useReducer+immer
