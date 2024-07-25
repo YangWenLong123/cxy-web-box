@@ -188,6 +188,33 @@ git pull
 
 //会把远程仓库所有的更新拉取下来,不会合并
 git fetch
+
+// 可以确保生产分支commit是一个线性结构，方便rollback。其实生产也可以选择打tag来发布
+// 注：通过rebase可以确保主分支commit history线性结构上每个commit点都是相对独立完整的功能单元。除了美感，这样做也有助于团队间的分工协作，比随便merge效果好。
+git rebase
+
+// 1、把本地 repo. 从上次 pull 之后的变更暂存 2、恢复到上次 pull 时的状态 3、.合并远端的变更到本地  4、最后再合并刚刚暂存下來的本地变更
+git pull --rebase（推荐用这个）
+```
+
+示例代码
+
+```bash
+# 确保工作目录干净
+git stash
+
+# 拉取远程代码并尝试 rebase
+git pull --rebase origin main
+
+# 如果遇到冲突，解决冲突后继续 rebase
+git add .
+git rebase --continue
+
+# 完成 rebase 后，推送更改到远程仓库
+git push origin main
+
+# 如果之前保存了更改，现在恢复它们
+git stash pop
 ```
 
 #### 代码推送到远程仓库

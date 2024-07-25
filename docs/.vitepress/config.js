@@ -16,9 +16,19 @@ export default defineConfig({
       },
     ],
     ["meta", { name: "baidu-site-verification", content: "codeva-KbKFpvJZ4Z" }],
+    [
+      "meta",
+      { name: "msvalidate.01", content: "CB413BF073235306E3024223EFEAC71E" },
+    ],
     ["meta", { name: "theme-color", content: "#3c8772" }],
     // ["link", { rel: "stylesheet", href: "/styles/global.css" }],
     ["link", { rel: "icon", href: "/image/logo.svg", type: "image/svg+xml" }],
+    [
+      "script",
+      {
+        src: "https://hm.baidu.com/hm.js?986e18ee826c11d1506f9129d240b80a",
+      },
+    ],
   ],
   themeConfig: {
     logo: "/image/logo.svg",
@@ -64,6 +74,12 @@ export default defineConfig({
         rel: "sponsored",
       },
       {
+        text: "语法速查表",
+        link: "http://xyz.alongweb.top/syntax",
+        target: "_self",
+        rel: "sponsored",
+      },
+      {
         text: "图片上传",
         link: "http://xyz.alongweb.top/upload",
         target: "_self",
@@ -81,12 +97,12 @@ export default defineConfig({
         target: "_self",
         rel: "sponsored",
       },
-      {
-        text: "截图",
-        link: "http://xyz.alongweb.top/shot",
-        target: "_self",
-        rel: "sponsored",
-      },
+      // {
+      //   text: "截图",
+      //   link: "http://xyz.alongweb.top/shot",
+      //   target: "_self",
+      //   rel: "sponsored",
+      // },
       {
         text: "面试",
         items: [
@@ -1087,9 +1103,9 @@ export default defineConfig({
         {
           text: "JavaScript面试题库",
           items: [
-            { text: "JavaScript面试题上", link: "/ms/javascript/index.md" },
-            { text: "JavaScript面试题中", link: "/ms/javascript/index1.md" },
-            { text: "JavaScript面试题下", link: "/ms/javascript/index2.md" },
+            { text: "基础篇", link: "/ms/javascript/index.md" },
+            { text: "进阶篇", link: "/ms/javascript/index1.md" },
+            { text: "原理篇", link: "/ms/javascript/index2.md" },
           ],
         },
       ],
@@ -1099,6 +1115,7 @@ export default defineConfig({
           items: [
             { text: "基础篇", link: "/ms/vue/index.md" },
             { text: "进阶篇", link: "/ms/vue/index1.md" },
+            { text: "原理篇", link: "/ms/vue/index2.md" },
           ],
         },
       ],
@@ -1108,6 +1125,8 @@ export default defineConfig({
           items: [
             { text: "基础篇", link: "/ms/react/index.md" },
             { text: "进阶篇", link: "/ms/react/index1.md" },
+            { text: "原理篇", link: "/ms/react/index2.md" },
+            { text: "实战篇", link: "/ms/react/index3.md" },
           ],
         },
       ],
