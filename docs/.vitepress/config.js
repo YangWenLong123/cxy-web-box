@@ -34,7 +34,7 @@ export default defineConfig({
     logo: "/image/logo.svg",
     lastUpdatedText: "Updated Date",
     search: {
-      // provider: 'local',
+      // provider: "local",
       options: {
         locales: {
           zh: {
@@ -59,8 +59,8 @@ export default defineConfig({
     // localeLinks: {
     //   items: [
     //     { text: "简体中文", link: "/" },
-    //     { text: "English", link: "/en" }
-    //   ]
+    //     { text: "English", link: "/en" },
+    //   ],
     // },
     // carbonAds: {
     //   code: 'your-carbon-code',

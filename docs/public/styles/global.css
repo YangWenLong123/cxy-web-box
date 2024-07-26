@@ -1,3 +1,7 @@
-  table th{ width: 500px; }
+  /* table th{ width: 500px; }
   .aside { display: none !important }
-  .has-aside .content-container { max-width: 1104px !important }
+  .has-aside .content-container { max-width: 1104px !important } */
+
+  .tagline {
+    white-space: nowrap !important;
+  }

@@ -1,7 +1,7 @@
 ---
 layout: home
 
-title: 程序员盒子(Web Box)
+title: 程序员盒子
 date: "2023-05-08"
 titleTemplate: 一个网站、提供一揽子的服务
 keywords:
