@@ -6,16 +6,19 @@ date: "2023-05-08"
 titleTemplate: 一个网站、提供一揽子的服务
 keywords:
   - 程序员盒子
+  - 程序员盒子
+  - 程序员
+  - 盒子
   - Web Box
   - web box
   - 一个网站、提供一揽子的服务
   - along
   - 前端笔记
 author: along
-description: "程序员盒子, 程序员盒子(Web Box), Web Box, 一个网站、提供一揽子的服务"
+description: "程序员盒子,程序员,盒子, 程序员盒子(Web Box), Web Box, 一个网站、提供一揽子的服务"
 
 hero:
-  name: 程序员盒子(Web Box)
+  name: 程序员盒子
   # text: 一个网站、提供一揽子的服务
   tagline: 一个网站、提供一揽子的服务
   # actions:

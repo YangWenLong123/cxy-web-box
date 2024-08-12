@@ -2,9 +2,9 @@ import { defineConfig } from "vitepress";
 
 export default defineConfig({
   // lang: 'en-US',
-  title: "Web Box",
+  title: "程序员盒子",
   description:
-    "Web Box, 程序员盒子, 一个网站、提供一揽子的服务, along, 前端笔记",
+    "程序员盒子,Web Box, 程序员盒子, 一个网站、提供一揽子的服务, along, 前端笔记",
   lastUpdated: true,
   head: [
     [
@@ -12,7 +12,7 @@ export default defineConfig({
       {
         name: "keywords",
         content:
-          "Web Box, 程序员盒子, 一个网站、提供一揽子的服务, along, 前端笔记, 前端知识库,Along,Vue,TypeScript,Css,Html5, 盒子, Box, Web",
+          "程序员盒子, 程序员, 盒子, Web Box, 程序员盒子, 一个网站、提供一揽子的服务, along, 前端笔记, 前端知识库,Along,Vue,TypeScript,Css,Html5, 盒子, Box, Web",
       },
     ],
     ["meta", { name: "baidu-site-verification", content: "codeva-KbKFpvJZ4Z" }],
