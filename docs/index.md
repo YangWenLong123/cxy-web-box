@@ -18,7 +18,7 @@ author: along
 description: "程序员盒子,程序员,盒子, 程序员盒子(Web Box), Web Box, 一个网站、提供一揽子的服务"
 
 hero:
-  name: 程序员盒子
+  name: 程序员盒子(Web Box)
   # text: 一个网站、提供一揽子的服务
   tagline: 一个网站、提供一揽子的服务
   # actions:

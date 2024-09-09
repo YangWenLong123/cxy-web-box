@@ -2,7 +2,7 @@ import { defineConfig } from "vitepress";
 
 export default defineConfig({
   // lang: 'en-US',
-  title: "程序员盒子",
+  title: "Web Box",
   description:
     "程序员盒子,Web Box, 程序员盒子, 一个网站、提供一揽子的服务, along, 前端笔记",
   lastUpdated: true,
@@ -80,6 +80,16 @@ export default defineConfig({
         rel: "sponsored",
       },
       {
+        text: "Linux速查",
+        link: "http://xyz.alongweb.top/linux",
+        target: "_self",
+        rel: "sponsored",
+      },
+      {
+        text: "HTTP小册",
+        link: "/http/",
+      },
+      {
         text: "图片上传",
         link: "http://xyz.alongweb.top/upload",
         target: "_self",
@@ -115,13 +125,13 @@ export default defineConfig({
           { text: "部署", link: "/ms/deploy/" },
         ],
       },
-      {
-        text: "小册",
-        items: [
-          { text: "linux小册", link: "/linux/" },
-          { text: "http小册", link: "/http/" },
-        ],
-      },
+      // {
+      //   text: "小册",
+      //   items: [
+      //     { text: "linux小册", link: "/linux/" },
+      //     { text: "http小册", link: "/http/" },
+      //   ],
+      // },
       {
         text: "博客文章",
         items: [
